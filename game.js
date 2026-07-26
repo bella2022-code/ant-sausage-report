@@ -39,8 +39,8 @@
       brandTitle:'火腿腸報告', chapter:'Chapter 01 · 野餐墊失物案', restart:'重新開始', back:'← 上一關', levelMenu:'關卡目錄', levelMenuEyebrow:'任務目錄', levelMenuTitle:'選擇要偵查的關卡',
       objectiveFind:'發現食物', objectiveReturn:'留下氣味回巢', objectiveCarry:'合力搬回家',
       introEyebrow:'017 的第一個任務', introTitle:'火腿腸，消失前快報告。', introCopy:'找到食物、回巢留下氣味，再帶同伴避開障礙把它搬回家。', start:'開始任務',
-      controls:'手機：拖曳　·　電腦：拖曳、WASD、方向鍵、空白鍵跳躍、E 咬斷', next:'下一關 →', jump:'跳！', bite:'咬斷', split:'分碎', bigWater:'超大水窪', jumpHint:'靠近水邊時按「跳！」或空白鍵', cutHint:'竹籤還卡著！按「咬斷」或 E。', splitHint:'食物太大了！按「分碎」或 E。', aria:'017 火腿腸報告遊戲。拖曳主角螞蟻移動。',
-      scoutKicker:'偵查任務', scoutTitle:'找到那根火腿腸', scoutCopy:'017 聞到一股可疑的肉香。拖曳牠穿過野餐墊，靠近粉紅色火腿腸。', scoutLine:'「這次我真的聞到了。」', scoutLabel:'偵查階段', scoutHint:'按住並拖曳 017 移動', scoutStatus:'沿著肉香前進。',
+      controls:'手機：點一下目的地　·　電腦：拖曳、WASD、方向鍵、空白鍵跳躍、E 咬斷', next:'下一關 →', jump:'跳！', bite:'咬斷', split:'分碎', bigWater:'超大水窪', jumpHint:'靠近水邊時按「跳！」或空白鍵', cutHint:'竹籤還卡著！按「咬斷」或 E。', splitHint:'食物太大了！按「分碎」或 E。', doneTag:'已完成', aria:'017 火腿腸報告遊戲。點擊或拖曳主角螞蟻移動。',
+      scoutKicker:'偵查任務', scoutTitle:'找到那根火腿腸', scoutCopy:'017 聞到一股可疑的肉香。手機點一下目的地；電腦可拖曳或用 WASD，靠近粉紅色火腿腸。', scoutLine:'「這次我真的聞到了。」', scoutLabel:'偵查階段', scoutHint:'點一下目的地，017 會自己走過去', scoutStatus:'沿著肉香前進。',
       returnKicker:'回巢報信', returnTitle:'快把消息帶回家', returnCopy:'017 要一邊跑回蟻巢、一邊留下氣味。這樣同伴才能跟著路線找到食物。', returnLine:'「大家，真的有火腿腸！」', returnLabel:'報信階段', returnHint:'帶著 017 回到蟻巢', returnStatus:'粉紅氣味線正在留下。',
       recruitKicker:'巢口招募', recruitTitle:'讓同伴聞見消息', recruitCopy:'017 正在用觸角與氣味召集同伴。等一下，蟻群就會沿路出發。', recruitLine:'「跟著我的氣味走！」', recruitLabel:'招募中', recruitHint:'螞蟻正在出巢', recruitStatus:'一、二、三……更多腳步聲！',
       carryKicker:'搬運任務', carryTitle:'一起把它搬回家', carryCopy:'拖曳火腿腸前進。繞開石頭與水窪，讓隊伍把大餐帶回蟻巢。', carryLine:'「左邊兩隻拉，後面一起推！」', carryLabel:'集體搬運', carryHint:'按住火腿腸並拖曳指揮', carryStatus:'避開石頭和水窪。',
@@ -51,8 +51,8 @@
       brandTitle:'Sausage Report', chapter:'Chapter 01 · Picnic Blanket Case', restart:'Restart', back:'← Previous', levelMenu:'Level select', levelMenuEyebrow:'MISSION DIRECTORY', levelMenuTitle:'Choose a scouting level',
       objectiveFind:'Find the food', objectiveReturn:'Scent a trail home', objectiveCarry:'Carry it home',
       introEyebrow:'017’s first mission', introTitle:'Report the sausage before it disappears.', introCopy:'Find it, leave a scent trail home, then lead the colony around obstacles.', start:'Start mission',
-      controls:'Mobile: drag · Desktop: drag, WASD, arrows, Space to jump, E to bite', next:'Next level →', jump:'JUMP!', bite:'BITE', split:'SPLIT', bigWater:'GIANT PUDDLE', jumpHint:'At the edge, press JUMP or Space', cutHint:'The bamboo skewer is stuck. Press BITE or E.', splitHint:'This food is too large. Press SPLIT or E.', aria:'017 Sausage Report game. Drag the scout ant to move.',
-      scoutKicker:'SCOUT MISSION', scoutTitle:'Find the sausage', scoutCopy:'017 catches a suspicious meaty scent. Drag through the picnic blanket and approach the pink sausage.', scoutLine:'“I really smelled it this time.”', scoutLabel:'SCOUTING', scoutHint:'Hold and drag 017 to move', scoutStatus:'Follow the scent.',
+      controls:'Mobile: tap a destination · Desktop: drag, WASD, arrows, Space to jump, E to bite', next:'Next level →', jump:'JUMP!', bite:'BITE', split:'SPLIT', bigWater:'GIANT PUDDLE', jumpHint:'At the edge, press JUMP or Space', cutHint:'The bamboo skewer is stuck. Press BITE or E.', splitHint:'This food is too large. Press SPLIT or E.', doneTag:'Complete', aria:'017 Sausage Report game. Tap or drag to move the scout ant.',
+      scoutKicker:'SCOUT MISSION', scoutTitle:'Find the sausage', scoutCopy:'017 catches a suspicious meaty scent. On mobile, tap a destination; on desktop, drag or use WASD to approach the pink sausage.', scoutLine:'“I really smelled it this time.”', scoutLabel:'SCOUTING', scoutHint:'Tap a destination — 017 walks there', scoutStatus:'Follow the scent.',
       returnKicker:'REPORT HOME', returnTitle:'Take the news home', returnCopy:'017 runs back while leaving a scent trail, so the colony can find the food.', returnLine:'“Everyone, there really is a sausage!”', returnLabel:'REPORTING', returnHint:'Bring 017 back to the nest', returnStatus:'A pink scent trail is forming.',
       recruitKicker:'NEST RECRUITMENT', recruitTitle:'Let the colony smell the news', recruitCopy:'017 is calling with antennae and scent. The colony will follow the trail soon.', recruitLine:'“Follow my trail!”', recruitLabel:'RECRUITING', recruitHint:'The colony is leaving the nest', recruitStatus:'One, two, three… more footsteps!',
       carryKicker:'CARRY MISSION', carryTitle:'Bring it home together', carryCopy:'Drag the sausage. Avoid the stone and puddle, and bring the feast into the nest.', carryLine:'“Two pull left, everyone else push!”', carryLabel:'TEAM CARRY', carryHint:'Hold the sausage and drag to guide', carryStatus:'Avoid the stone and puddle.',
@@ -63,8 +63,8 @@
       brandTitle:'ソーセージ報告', chapter:'Chapter 01 · ピクニックシート事件', restart:'最初から', back:'← 前のステージ', levelMenu:'ステージ選択', levelMenuEyebrow:'任務一覧', levelMenuTitle:'偵察ステージを選ぶ',
       objectiveFind:'食べ物を見つける', objectiveReturn:'においを残して巣へ', objectiveCarry:'みんなで巣へ運ぶ',
       introEyebrow:'017、最初の任務', introTitle:'ソーセージが消える前に報告！', introCopy:'食べ物を見つけ、においの道を巣まで残して、仲間と障害物を避けて運ぼう。', start:'任務を始める',
-      controls:'スマホ：ドラッグ　·　PC：ドラッグ、WASD、矢印キー、Spaceでジャンプ、Eでかみ切る', next:'次のステージ →', jump:'ジャンプ！', bite:'かみ切る', split:'分ける', bigWater:'大きな水たまり', jumpHint:'水ぎわでジャンプかSpaceを押す', cutHint:'竹串が刺さっている！かみ切るか E を押す。', splitHint:'食べ物が大きすぎる！分けるか E を押す。', aria:'017 ソーセージ報告ゲーム。偵察アリをドラッグして動かします。',
-      scoutKicker:'偵察任務', scoutTitle:'ソーセージを探そう', scoutCopy:'017 はあやしい肉のにおいを感じた。ピンクのソーセージへ近づこう。', scoutLine:'「今度こそ、本当ににおった。」', scoutLabel:'偵察中', scoutHint:'017 を押してドラッグ', scoutStatus:'においをたどろう。',
+      controls:'スマホ：目的地をタップ　·　PC：ドラッグ、WASD、矢印キー、Spaceでジャンプ、Eでかみ切る', next:'次のステージ →', jump:'ジャンプ！', bite:'かみ切る', split:'分ける', bigWater:'大きな水たまり', jumpHint:'水ぎわでジャンプかSpaceを押す', cutHint:'竹串が刺さっている！かみ切るか E を押す。', splitHint:'食べ物が大きすぎる！分けるか E を押す。', doneTag:'クリア', aria:'017 ソーセージ報告ゲーム。タップまたはドラッグで偵察アリを動かします。',
+      scoutKicker:'偵察任務', scoutTitle:'ソーセージを探そう', scoutCopy:'017 はあやしい肉のにおいを感じた。スマホなら目的地をタップ、PCならドラッグか WASD でピンクのソーセージへ近づこう。', scoutLine:'「今度こそ、本当ににおった。」', scoutLabel:'偵察中', scoutHint:'目的地をタップすると017が歩く', scoutStatus:'においをたどろう。',
       returnKicker:'巣へ報告', returnTitle:'知らせを巣へ持ち帰ろう', returnCopy:'017 はにおいの道を残しながら巣へ走る。仲間はその道をたどれる。', returnLine:'「みんな、本当にソーセージだよ！」', returnLabel:'報告中', returnHint:'017 を巣へ連れて帰る', returnStatus:'ピンクのにおいの道が残っている。',
       recruitKicker:'仲間を集める', recruitTitle:'仲間に知らせよう', recruitCopy:'017 は触角とにおいで仲間を呼んでいる。すぐにアリたちが道をたどる。', recruitLine:'「このにおいについてきて！」', recruitLabel:'集合中', recruitHint:'アリたちが巣から出発中', recruitStatus:'一匹、二匹、三匹……足音が増える！',
       carryKicker:'運搬任務', carryTitle:'みんなで巣へ運ぼう', carryCopy:'ソーセージをドラッグしよう。石と水たまりを避け、巣まで運ぼう。', carryLine:'「左の二匹は引いて、後ろは押して！」', carryLabel:'協力運搬', carryHint:'ソーセージを押してドラッグ', carryStatus:'石と水たまりに注意。',
@@ -164,7 +164,10 @@
     levelGrid.replaceChildren(...copy.map(([name, detail], index) => {
       const button = document.createElement('button');
       button.type = 'button'; button.className = 'level-choice';
-      button.innerHTML = `<span class="level-number">${index + 1}</span><span><strong>${name}</strong><small>${detail}</small></span>`;
+      const completed = profile.completed.includes(index);
+      button.classList.toggle('is-complete', completed);
+      button.setAttribute('aria-label', `${index + 1}. ${name}${completed ? ` — ${t('doneTag')}` : ''}`);
+      button.innerHTML = `<span class="level-number">${completed ? '✓' : index + 1}</span><span><strong>${name}</strong><small>${completed ? `${t('doneTag')} · ` : ''}${detail}</small></span>`;
       button.addEventListener('click', () => chooseLevel(index));
       return button;
     }));
@@ -229,10 +232,10 @@
   const outfitCosts = [0, 24, 48, 80, 18, 30, 42, 56, 68, 84, 104, 128];
   // 暫時開放全部造型，方便測試衣櫥；正式版改成 false 即可恢復餅乾屑兌換。
   const wardrobeTestMode = true;
-  let profile = { crumbs:0, owned:[0], equipped:0 };
+  let profile = { crumbs:0, owned:[0], equipped:0, completed:[] };
   try {
     const saved = JSON.parse(localStorage.getItem('ant-017-profile'));
-    if (saved && Number.isFinite(saved.crumbs) && Array.isArray(saved.owned)) profile = { crumbs:saved.crumbs, owned:[0, ...saved.owned.filter(n => Number.isInteger(n) && n > 0 && n < outfitCosts.length)], equipped:outfitCosts.includes(outfitCosts[saved.equipped]) ? saved.equipped : 0 };
+    if (saved && Number.isFinite(saved.crumbs) && Array.isArray(saved.owned)) profile = { crumbs:saved.crumbs, owned:[0, ...saved.owned.filter(n => Number.isInteger(n) && n > 0 && n < outfitCosts.length)], equipped:Number.isInteger(saved.equipped) && saved.equipped >= 0 && saved.equipped < outfitCosts.length ? saved.equipped : 0, completed:Array.isArray(saved.completed) ? [...new Set(saved.completed.filter(n => Number.isInteger(n) && n >= 0 && n < levels.length))] : [] };
   } catch (_) {}
   function saveProfile() { try { localStorage.setItem('ant-017-profile', JSON.stringify(profile)); } catch (_) {} }
   function updateCrumbBank() { crumbBank.hidden = wardrobeTestMode; const amount = crumbBank.querySelector('b'); if (amount) amount.textContent = profile.crumbs; }
@@ -350,7 +353,7 @@
   }
 
   function update(dt, now) {
-    if (!started || state.complete) return;
+    if (!started || state.complete || state.paused) return;
     if (state.jump) {
       const progress = Math.min(1, (now - state.jump.startedAt) / 620);
       const eased = progress < .5 ? 2 * progress * progress : 1 - ((-2 * progress + 2) ** 2) / 2;
@@ -411,6 +414,7 @@
       state.sausage.scale = 1 - eased * .82;
       if (elapsed >= 1) {
         state.complete = true;
+        if (!profile.completed.includes(levelIndex)) { profile.completed.push(levelIndex); saveProfile(); }
         if (!wardrobeTestMode) { profile.crumbs += 12; saveProfile(); updateCrumbBank(); state.notice = { text: wc().reward, until: now + 2600 }; }
         for (let i = 0; i < 34; i++) state.burst.push({ a: Math.random() * Math.PI * 2, r: 0, v: 45 + Math.random() * 80, hue: i % 2 ? ui.gold : ui.coral });
         setUi();
@@ -681,9 +685,9 @@
     } else state.notice = { text: `${t('split')} ${state.bites} / 2`, until: performance.now() + 700 };
     setUi();
   }
-  function down(e){ if(!started||state.complete)return; canvas.setPointerCapture(e.pointerId); held=true;pointer=p(e); }
+  function down(e){ if(!started||state.complete||state.paused)return; canvas.setPointerCapture(e.pointerId); held=true;pointer=p(e); }
   function move(e){if(held)pointer=p(e);}
-  function up(e){if(canvas.hasPointerCapture(e.pointerId))canvas.releasePointerCapture(e.pointerId);held=false;pointer=null;}
+  function up(e){if(canvas.hasPointerCapture(e.pointerId))canvas.releasePointerCapture(e.pointerId);held=false;if(e.pointerType !== 'touch')pointer=null;}
   canvas.addEventListener('pointerdown',down);canvas.addEventListener('pointermove',move);canvas.addEventListener('pointerup',up);canvas.addEventListener('pointercancel',up);
   canvas.addEventListener('keydown',e=>{
     const key=e.code;
@@ -698,21 +702,23 @@
   window.addEventListener('keydown', e => { if (started && ['Space','ArrowUp','ArrowDown'].includes(e.code)) e.preventDefault(); if (started && e.code === 'Escape') { e.preventDefault(); openLevelMenu(); } });
   function begin(){started=true;startOverlay.classList.remove('is-visible');liveStatus.textContent=t('leaving');window.PokiBridge?.gameplayStart();canvas.focus();}
   function chooseLevel(index) {
-    levelIndex = index; reset(); started = true;
+    levelIndex = index; reset(); started = true; state.paused = false;
     startOverlay.classList.remove('is-visible'); levelOverlay.hidden = true;
     liveStatus.textContent = t('leaving'); window.PokiBridge?.gameplayStart(); canvas.focus();
   }
   function openLevelMenu() {
+    if (state) state.paused = true;
     renderLevelMenu();
     levelOverlay.hidden = false;
     levelOverlay.style.display = 'grid';
   }
   function hideLevelMenu() {
+    if (state) state.paused = false;
     levelOverlay.hidden = true;
     levelOverlay.style.display = '';
   }
-  function openWardrobe() { renderWardrobe(); wardrobeOverlay.hidden = false; }
-  function hideWardrobe() { wardrobeOverlay.hidden = true; }
+  function openWardrobe() { if (state) state.paused = true; renderWardrobe(); wardrobeOverlay.hidden = false; }
+  function hideWardrobe() { if (state) state.paused = false; wardrobeOverlay.hidden = true; }
   startButton.addEventListener('click',begin); resetButton.addEventListener('click',()=>{reset();started=true;startOverlay.classList.remove('is-visible');}); brand.addEventListener('click',e=>{e.preventDefault();reset();started=false;startOverlay.classList.add('is-visible');});
   levelMenuButton.addEventListener('click', openLevelMenu);
   levelMenuButton.onclick = openLevelMenu;
