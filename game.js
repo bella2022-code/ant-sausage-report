@@ -45,7 +45,7 @@
       recruitKicker:'巢口招募', recruitTitle:'讓同伴聞見消息', recruitCopy:'017 正在用觸角與氣味召集同伴。等一下，蟻群就會沿路出發。', recruitLine:'「跟著我的氣味走！」', recruitLabel:'招募中', recruitHint:'螞蟻正在出巢', recruitStatus:'一、二、三……更多腳步聲！',
       carryKicker:'搬運任務', carryTitle:'一起把它搬回家', carryCopy:'拖曳火腿腸前進。繞開石頭與水窪，讓隊伍把大餐帶回蟻巢。', carryLine:'「左邊兩隻拉，後面一起推！」', carryLabel:'集體搬運', carryHint:'按住火腿腸並拖曳指揮', carryStatus:'避開石頭和水窪。',
       doneKicker:'任務完成', doneTitle:'017 證明了自己', doneCopy:'火腿腸安全入庫。這次所有螞蟻都相信 017 的報告了。', doneLine:'「我就說過吧！」', doneLabel:'火腿腸已入巢', doneHint:'按重新開始再玩一次', doneStatus:'野餐墊失物案：結案。',
-      found:'找到食物！', decoy:'糟糕，這是石頭！真正的食物在別處。', rush:'食物快被搬走了！直接帶隊救援。', recruiting:'017 正在招募同伴', depart:'蟻群跟著氣味線出發！', rock:'石頭太近了！繞過去。', puddle:'水窪會沖散隊伍！', rival:'那是隔壁紅螞蟻的巢穴，不能靠近！', delivering:'大家抓緊，一起搬進巢穴！', nest:'蟻巢', stone:'石頭', water:'水窪', rivalNest:'紅螞蟻巢穴', foodSausage:'火腿腸', foodCrescent:'彎彎火腿', foodMeatball:'肉丸', foodSquare:'午餐肉', foodBaguette:'麵包棒', foodDonut:'甜甜圈', foodCheese:'起司角', foodHeart:'愛心火腿', success:'食物安全入巢！', successSub:'017 的報告是真的。', ready:'準備出巢。', leaving:'017 出巢了。'
+      found:'找到食物！', decoy:'糟糕，這是石頭！真正的食物在別處。', rush:'食物快被搬走了！直接帶隊救援。', recruiting:'017 正在招募同伴', depart:'蟻群跟著氣味線出發！', rock:'石頭太近了！繞過去。', puddle:'水窪會沖散隊伍！', rival:'那是隔壁紅螞蟻的巢穴，不能靠近！', delivering:'大家抓緊，一起搬進巢穴！', nest:'蟻巢', stone:'石頭', water:'水窪', rivalNest:'紅螞蟻巢穴', patrol:'巡邏中', foodSausage:'火腿腸', foodCrescent:'彎彎火腿', foodMeatball:'肉丸', foodSquare:'午餐肉', foodBaguette:'麵包棒', foodDonut:'甜甜圈', foodCheese:'起司角', foodHeart:'愛心火腿', success:'食物安全入巢！', successSub:'017 的報告是真的。', ready:'準備出巢。', leaving:'017 出巢了。'
     },
     en: {
       brandTitle:'Sausage Report', chapter:'Chapter 01 · Picnic Blanket Case', restart:'Restart', back:'← Previous', levelMenu:'Level select', levelMenuEyebrow:'MISSION DIRECTORY', levelMenuTitle:'Choose a scouting level',
@@ -57,7 +57,7 @@
       recruitKicker:'NEST RECRUITMENT', recruitTitle:'Let the colony smell the news', recruitCopy:'017 is calling with antennae and scent. The colony will follow the trail soon.', recruitLine:'“Follow my trail!”', recruitLabel:'RECRUITING', recruitHint:'The colony is leaving the nest', recruitStatus:'One, two, three… more footsteps!',
       carryKicker:'CARRY MISSION', carryTitle:'Bring it home together', carryCopy:'Drag the sausage. Avoid the stone and puddle, and bring the feast into the nest.', carryLine:'“Two pull left, everyone else push!”', carryLabel:'TEAM CARRY', carryHint:'Hold the sausage and drag to guide', carryStatus:'Avoid the stone and puddle.',
       doneKicker:'MISSION COMPLETE', doneTitle:'017 proved it', doneCopy:'The sausage is safe in storage. Everyone believes 017 now.', doneLine:'“Told you so!”', doneLabel:'SAUSAGE STORED', doneHint:'Press Restart to play again', doneStatus:'Picnic Blanket Case: closed.',
-      found:'Food found!', decoy:'Oh no, it is a stone! The real food is elsewhere.', rush:'The food is about to disappear! Lead a rescue team now.', recruiting:'017 is recruiting the colony', depart:'The ants follow the scent trail!', rock:'The stone is too close. Go around!', puddle:'The puddle will scatter the team!', rival:'That is the red ants’ nest. Keep away!', delivering:'Hold tight — carry it into the nest!', nest:'NEST', stone:'STONE', water:'PUDDLE', rivalNest:'RED ANT NEST', foodSausage:'SAUSAGE', foodCrescent:'CURLY HAM', foodMeatball:'MEATBALL', foodSquare:'LUNCHEON MEAT', foodBaguette:'BREADSTICK', foodDonut:'DONUT', foodCheese:'CHEESE WEDGE', foodHeart:'HEART HAM', success:'Food safely stored!', successSub:'017’s report was true.', ready:'Ready to leave the nest.', leaving:'017 leaves the nest.'
+      found:'Food found!', decoy:'Oh no, it is a stone! The real food is elsewhere.', rush:'The food is about to disappear! Lead a rescue team now.', recruiting:'017 is recruiting the colony', depart:'The ants follow the scent trail!', rock:'The stone is too close. Go around!', puddle:'The puddle will scatter the team!', rival:'That is the red ants’ nest. Keep away!', delivering:'Hold tight — carry it into the nest!', nest:'NEST', stone:'STONE', water:'PUDDLE', rivalNest:'RED ANT NEST', patrol:'PATROLLING', foodSausage:'SAUSAGE', foodCrescent:'CURLY HAM', foodMeatball:'MEATBALL', foodSquare:'LUNCHEON MEAT', foodBaguette:'BREADSTICK', foodDonut:'DONUT', foodCheese:'CHEESE WEDGE', foodHeart:'HEART HAM', success:'Food safely stored!', successSub:'017’s report was true.', ready:'Ready to leave the nest.', leaving:'017 leaves the nest.'
     },
     ja: {
       brandTitle:'ソーセージ報告', chapter:'Chapter 01 · ピクニックシート事件', restart:'最初から', back:'← 前のステージ', levelMenu:'ステージ選択', levelMenuEyebrow:'任務一覧', levelMenuTitle:'偵察ステージを選ぶ',
@@ -69,7 +69,7 @@
       recruitKicker:'仲間を集める', recruitTitle:'仲間に知らせよう', recruitCopy:'017 は触角とにおいで仲間を呼んでいる。すぐにアリたちが道をたどる。', recruitLine:'「このにおいについてきて！」', recruitLabel:'集合中', recruitHint:'アリたちが巣から出発中', recruitStatus:'一匹、二匹、三匹……足音が増える！',
       carryKicker:'運搬任務', carryTitle:'みんなで巣へ運ぼう', carryCopy:'ソーセージをドラッグしよう。石と水たまりを避け、巣まで運ぼう。', carryLine:'「左の二匹は引いて、後ろは押して！」', carryLabel:'協力運搬', carryHint:'ソーセージを押してドラッグ', carryStatus:'石と水たまりに注意。',
       doneKicker:'任務完了', doneTitle:'017 が証明した', doneCopy:'ソーセージは無事に保管された。みんなが017を信じてくれた。', doneLine:'「だから言ったでしょ！」', doneLabel:'ソーセージを保管', doneHint:'最初から を押してもう一度', doneStatus:'ピクニックシート事件：解決。',
-      found:'食べ物を発見！', decoy:'しまった、石だった！本物の食べ物は別の場所にある。', rush:'食べ物がなくなる！すぐに救援隊を動かそう。', recruiting:'017 が仲間を集めている', depart:'アリたちがにおいの道をたどる！', rock:'石が近すぎる。回り込もう！', puddle:'水たまりで隊列がばらばらに！', rival:'ここは赤アリの巣。近づかないで！', delivering:'みんな、つかまって！巣へ運ぼう！', nest:'アリの巣', stone:'石', water:'水たまり', rivalNest:'赤アリの巣', foodSausage:'ソーセージ', foodCrescent:'曲がったハム', foodMeatball:'ミートボール', foodSquare:'ランチョンミート', foodBaguette:'パン棒', foodDonut:'ドーナツ', foodCheese:'チーズ', foodHeart:'ハートハム', success:'食べ物を無事に保管！', successSub:'017 の報告は本当だった。', ready:'巣を出る準備完了。', leaving:'017 が巣を出た。'
+      found:'食べ物を発見！', decoy:'しまった、石だった！本物の食べ物は別の場所にある。', rush:'食べ物がなくなる！すぐに救援隊を動かそう。', recruiting:'017 が仲間を集めている', depart:'アリたちがにおいの道をたどる！', rock:'石が近すぎる。回り込もう！', puddle:'水たまりで隊列がばらばらに！', rival:'ここは赤アリの巣。近づかないで！', delivering:'みんな、つかまって！巣へ運ぼう！', nest:'アリの巣', stone:'石', water:'水たまり', rivalNest:'赤アリの巣', patrol:'巡回中', foodSausage:'ソーセージ', foodCrescent:'曲がったハム', foodMeatball:'ミートボール', foodSquare:'ランチョンミート', foodBaguette:'パン棒', foodDonut:'ドーナツ', foodCheese:'チーズ', foodHeart:'ハートハム', success:'食べ物を無事に保管！', successSub:'017 の報告は本当だった。', ready:'巣を出る準備完了。', leaving:'017 が巣を出た。'
     }
   };
   let locale = 'zh-Hant';
@@ -195,10 +195,10 @@
     { nest:{ x:485, y:112, r:63 }, food:{ x:480, y:440, shape:'sausage', key:'foodSausage', radius:52 }, rock:{ x:265, y:278, r:63 }, puddle:{ x:715, y:295, rx:105, ry:49 }, rival:{ x:492, y:300, r:75 } },
     { mode:'night', nest:{ x:480, y:430, r:71 }, food:{ x:480, y:112, shape:'heart', key:'foodHeart', radius:62, skewer:true, fragment:true }, rock:{ x:282, y:168, r:66 }, puddle:{ x:690, y:400, rx:180, ry:82, huge:true }, rival:{ x:478, y:275, r:82 } },
     { nest:{ x:108, y:270, r:48 }, food:{ x:836, y:270, shape:'meatball', key:'foodMeatball', radius:42 }, rock:{ x:454, y:154, r:68 }, puddle:{ x:455, y:382, rx:128, ry:58 }, rival:{ x:690, y:170, r:76 } },
-    { nest:{ x:850, y:430, r:41 }, food:{ x:128, y:112, shape:'sausage', key:'foodSausage', radius:52, skewer:true }, rock:{ x:370, y:286, r:66 }, puddle:{ x:674, y:215, rx:108, ry:50 }, rival:{ x:548, y:420, r:78 } },
+    { patrol:true, nest:{ x:850, y:430, r:41 }, food:{ x:128, y:112, shape:'sausage', key:'foodSausage', radius:52, skewer:true }, rock:{ x:370, y:286, r:66 }, puddle:{ x:674, y:215, rx:108, ry:50 }, rival:{ x:548, y:420, r:78 } },
     { mode:'rush', nest:{ x:112, y:430, r:58 }, food:{ x:842, y:120, shape:'crescent', key:'foodCrescent', radius:58 }, rock:{ x:482, y:285, r:70 }, puddle:{ x:655, y:420, rx:170, ry:76, huge:true }, rival:{ x:290, y:150, r:72 } },
     { nest:{ x:848, y:122, r:44 }, food:{ x:112, y:430, shape:'square', key:'foodSquare', radius:46, fragment:true }, rock:{ x:460, y:205, r:64 }, puddle:{ x:675, y:340, rx:111, ry:52 }, rival:{ x:326, y:426, r:76 } },
-    { mode:'decoy', decoy:{x:560,y:112}, nest:{ x:108, y:430, r:54 }, food:{ x:848, y:410, shape:'donut', key:'foodDonut', radius:55 }, rock:{ x:460, y:406, r:67 }, puddle:{ x:312, y:196, rx:104, ry:48 }, rival:{ x:665, y:210, r:78 } },
+    { mode:'decoy', patrol:true, decoy:{x:560,y:112}, nest:{ x:108, y:430, r:54 }, food:{ x:848, y:410, shape:'donut', key:'foodDonut', radius:55 }, rock:{ x:460, y:406, r:67 }, puddle:{ x:312, y:196, rx:104, ry:48 }, rival:{ x:665, y:210, r:78 } },
     { mode:'night', nest:{ x:842, y:430, r:50 }, food:{ x:130, y:112, shape:'cheese', key:'foodCheese', radius:48 }, rock:{ x:500, y:148, r:65 }, puddle:{ x:325, y:360, rx:110, ry:52 }, rival:{ x:590, y:390, r:80 } },
     { nest:{ x:120, y:122, r:72 }, food:{ x:840, y:422, shape:'baguette', key:'foodBaguette', radius:68, fragment:true }, rock:{ x:605, y:255, r:68 }, puddle:{ x:318, y:330, rx:120, ry:55 }, rival:{ x:430, y:430, r:76 } },
     { mode:'rush', nest:{ x:480, y:448, r:62 }, food:{ x:480, y:102, shape:'heart', key:'foodHeart', radius:62, skewer:true, fragment:true }, rock:{ x:278, y:248, r:68 }, puddle:{ x:694, y:370, rx:176, ry:78, huge:true }, rival:{ x:610, y:205, r:82 } },
@@ -210,16 +210,16 @@
     { nest:{ x:846, y:116, r:58 }, food:{ x:118, y:420, shape:'crescent', key:'foodCrescent', radius:58, skewer:true }, rock:{ x:430, y:264, r:69 }, puddle:{ x:646, y:376, rx:112, ry:52 }, rival:{ x:292, y:154, r:75 } },
     { nest:{ x:108, y:424, r:72 }, food:{ x:840, y:120, shape:'square', key:'foodSquare', radius:46 }, rock:{ x:516, y:154, r:65 }, puddle:{ x:362, y:337, rx:110, ry:51 }, rival:{ x:700, y:396, r:79 } },
     { mode:'rush', nest:{ x:850, y:420, r:68 }, food:{ x:112, y:120, shape:'baguette', key:'foodBaguette', radius:68 }, rock:{ x:408, y:358, r:68 }, puddle:{ x:666, y:202, rx:170, ry:78, huge:true }, rival:{ x:480, y:168, r:75 } },
-    { mode:'night', nest:{ x:118, y:118, r:54 }, food:{ x:840, y:426, shape:'meatball', key:'foodMeatball', radius:42 }, rock:{ x:505, y:280, r:70 }, puddle:{ x:273, y:366, rx:106, ry:49 }, rival:{ x:676, y:176, r:80 } },
+    { mode:'night', patrol:true, nest:{ x:118, y:118, r:54 }, food:{ x:840, y:426, shape:'meatball', key:'foodMeatball', radius:42 }, rock:{ x:505, y:280, r:70 }, puddle:{ x:273, y:366, rx:106, ry:49 }, rival:{ x:676, y:176, r:80 } },
     { nest:{ x:840, y:126, r:49 }, food:{ x:116, y:420, shape:'donut', key:'foodDonut', radius:55, fragment:true }, rock:{ x:375, y:210, r:65 }, puddle:{ x:664, y:334, rx:110, ry:52 }, rival:{ x:525, y:426, r:77 } },
     { nest:{ x:112, y:428, r:40 }, food:{ x:842, y:120, shape:'heart', key:'foodHeart', radius:62, skewer:true, fragment:true }, rock:{ x:506, y:215, r:66 }, puddle:{ x:678, y:394, rx:108, ry:50 }, rival:{ x:325, y:396, r:79 } },
-    { mode:'night', nest:{ x:486, y:432, r:52 }, food:{ x:480, y:104, shape:'square', key:'foodSquare', radius:46, skewer:true, fragment:true }, rock:{ x:274, y:225, r:68 }, puddle:{ x:690, y:384, rx:174, ry:80, huge:true }, rival:{ x:490, y:278, r:82 } }
+    { mode:'night', patrol:true, nest:{ x:486, y:432, r:52 }, food:{ x:480, y:104, shape:'square', key:'foodSquare', radius:46, skewer:true, fragment:true }, rock:{ x:274, y:225, r:68 }, puddle:{ x:690, y:384, rx:174, ry:80, huge:true }, rival:{ x:490, y:278, r:82 } }
   ];
   let levelIndex = 0;
   let nest, sausageStart, rock, puddle, rivalNest, foodConfig, missionMode, decoyPoint, mapTheme;
   function loadLevel(index) {
     const level = levels[index];
-    nest = { ...level.nest }; sausageStart = { x:level.food.x, y:level.food.y }; foodConfig = { ...level.food }; rock = { ...level.rock }; puddle = { ...level.puddle }; rivalNest = level.rival ? { ...level.rival } : null; missionMode = level.mode || 'standard'; decoyPoint = level.decoy ? { ...level.decoy } : null; mapTheme = ['blanket','tile','garden','desk'][index % 4];
+    nest = { ...level.nest }; sausageStart = { x:level.food.x, y:level.food.y }; foodConfig = { ...level.food }; rock = { ...level.rock }; puddle = { ...level.puddle }; rivalNest = level.rival ? { ...level.rival, patrol:!!level.patrol, homeX:level.rival.x, homeY:level.rival.y } : null; missionMode = level.mode || 'standard'; decoyPoint = level.decoy ? { ...level.decoy } : null; mapTheme = ['blanket','tile','garden','desk'][index % 4];
   }
   function currentFoodRadius() { return state?.fragmented ? foodConfig.radius * .62 : foodConfig.radius; }
   const ui = { ink: '#342b25', paper: '#fffaf2', coral: '#d97872', coralDark: '#b95251', moss: '#7e936c', gold: '#d8a34e', blue: '#9cc9d2', muted: '#7c6b61' };
@@ -279,7 +279,7 @@
     state = {
       phase: rush ? 'carry' : 'scout', scout: { x: nest.x + 8, y: nest.y + 2, a: -0.6, found: false },
       sausage: { x: decoyPoint?.x ?? sausageStart.x, y: decoyPoint?.y ?? sausageStart.y, a: -0.12, scale: 1 },
-      trail: [], team: [], recruitAt: 0, followStart: 0, complete: false, burst: [], notice: null, jump: null, jumpUsed: false, bites: 0, skewerRemoved: !foodConfig.skewer, fragmented: false
+      trail: [], team: [], recruitAt: 0, followStart: 0, complete: false, burst: [], notice: null, jump: null, jumpUsed: false, bites: 0, skewerRemoved: !foodConfig.skewer, fragmented: false, patrolStart: performance.now()
     };
     if (rush) { state.team = Array.from({ length: 16 }, (_, i) => ({ offset: i * Math.PI * 2 / 16, bob: Math.random() * Math.PI * 2 })); state.notice = { text:t('rush'), until:performance.now() + 1600 }; }
     pointer = null; held = false; last = performance.now();
@@ -354,6 +354,11 @@
 
   function update(dt, now) {
     if (!started || state.complete || state.paused) return;
+    if (rivalNest?.patrol) {
+      const orbit = (now - state.patrolStart) / 1300;
+      rivalNest.x = rivalNest.homeX + Math.cos(orbit) * 48;
+      rivalNest.y = rivalNest.homeY + Math.sin(orbit * 1.25) * 28;
+    }
     if (state.jump) {
       const progress = Math.min(1, (now - state.jump.startedAt) / 620);
       const eased = progress < .5 ? 2 * progress * progress : 1 - ((-2 * progress + 2) ** 2) / 2;
@@ -503,6 +508,7 @@
     ctx.fillStyle = '#703b31'; ctx.beginPath(); ctx.arc(0, 0, r.r * .48, 0, Math.PI * 2); ctx.fill(); ctx.restore();
     for (let i = 0; i < 5; i++) { const a = now / 700 + i * Math.PI * 2 / 5; drawAnt(r.x + Math.cos(a) * (r.r + 13), r.y + Math.sin(a) * (r.r + 13), a + Math.PI / 2, .37); }
     label(t('rivalNest'), r.x, r.y + r.r + 27, 13, '#8e4238');
+    if (r.patrol) label(t('patrol'), r.x, r.y + r.r + 43, 11, '#b95251');
   }
   function drawPuddle() {
     ctx.save(); ctx.translate(puddle.x, puddle.y); ctx.fillStyle = puddle.huge ? 'rgba(102,177,195,.7)' : 'rgba(137,197,210,.55)'; ctx.beginPath(); ctx.ellipse(0,0,puddle.rx,puddle.ry, -.12, 0, Math.PI*2); ctx.fill();
