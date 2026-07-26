@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="zh-Hant">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#f7efe4" />
+    <title>017：火腿腸報告</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="shell">
+      <header class="topbar">
+        <a class="brand" href="#" aria-label="重新開始遊戲">
+          <span class="brand-mark">017</span>
+          <span data-i18n="brandTitle">火腿腸報告</span>
+        </a>
+        <div class="topbar-note" data-i18n="chapter">Chapter 01 · 野餐墊失物案</div>
+        <span class="crumb-bank" id="crumbBank" aria-label="017 的餅乾屑"><i class="crumb-icon" aria-hidden="true"></i><b>0</b><small>餅乾屑</small></span>
+        <label class="language-picker" for="languageSelect"><span class="sr-only">Language</span><select id="languageSelect" aria-label="Language"><option value="zh-Hant">繁中</option><option value="en">EN</option><option value="ja">日本語</option></select></label>
+        <button class="quiet-button" id="wardrobeButton" type="button">017 衣櫥</button>
+        <button class="quiet-button" id="levelMenuButton" type="button" data-i18n="levelMenu">關卡目錄</button>
+        <button class="quiet-button" id="resetButton" type="button" data-i18n="restart">重新開始</button>
+      </header>
+
+      <section class="game-layout" aria-label="遊戲畫面">
+        <aside class="story-panel">
+          <p class="eyebrow" id="phaseKicker">偵查任務</p>
+          <h1 id="missionTitle">找到那根火腿腸</h1>
+          <p class="mission-copy" id="missionCopy">017 聞到一股可疑的肉香。拖曳牠穿過野餐墊，靠近粉紅色火腿腸。</p>
+          <div class="character-card">
+            <div class="portrait" aria-hidden="true"><span></span><span></span><span></span></div>
+            <div>
+              <strong>017</strong>
+              <p id="characterLine">「這次我真的聞到了。」</p>
+            </div>
+          </div>
+          <div class="objective-list" aria-label="任務進度">
+            <div class="objective is-active" id="objectiveFind"><span>1</span><b data-i18n="objectiveFind">發現食物</b></div>
+            <div class="objective" id="objectiveReturn"><span>2</span><b data-i18n="objectiveReturn">留下氣味回巢</b></div>
+            <div class="objective" id="objectiveCarry"><span>3</span><b data-i18n="objectiveCarry">合力搬回家</b></div>
+          </div>
+        </aside>
+
+        <section class="game-card">
+          <div class="game-head">
+            <span class="chapter-label"><span id="canvasLabel">偵查階段</span> <span id="levelIndicator">1 / 8</span></span>
+            <span class="hint" id="canvasHint">按住並拖曳 017 移動</span>
+          </div>
+          <div class="canvas-wrap">
+            <canvas id="gameCanvas" width="960" height="540" aria-label="017 火腿腸報告遊戲。拖曳主角螞蟻移動。" tabindex="0"></canvas>
+            <button class="jump-button" id="jumpButton" type="button" hidden>跳！</button>
+            <button class="bite-button" id="biteButton" type="button" hidden>咬斷！</button>
+            <div class="overlay is-visible" id="startOverlay">
+              <div class="overlay-paper">
+                <p class="eyebrow" data-i18n="introEyebrow">017 的第一個任務</p>
+                <h2 data-i18n="introTitle">火腿腸，消失前快報告。</h2>
+                <p data-i18n="introCopy">找到食物、回巢留下氣味，再帶同伴避開障礙把它搬回家。</p>
+                <button class="play-button" id="startButton" type="button"><span data-i18n="start">開始任務</span> <span>→</span></button>
+              </div>
+            </div>
+            <div class="level-overlay" id="levelOverlay" hidden>
+              <div class="level-sheet" role="dialog" aria-modal="true" aria-labelledby="levelMenuTitle">
+                <div class="level-sheet-head"><div><p class="eyebrow" data-i18n="levelMenuEyebrow">任務目錄</p><h2 id="levelMenuTitle" data-i18n="levelMenuTitle">選擇要偵查的關卡</h2></div><button class="close-menu" id="closeLevelMenu" type="button" aria-label="Close">×</button></div>
+                <div class="level-grid" id="levelGrid"></div>
+              </div>
+            </div>
+            <div class="wardrobe-overlay" id="wardrobeOverlay" hidden>
+              <div class="wardrobe-sheet" role="dialog" aria-modal="true" aria-labelledby="wardrobeTitle">
+                <div class="level-sheet-head"><div><p class="eyebrow" id="wardrobeEyebrow">017 的衣櫥</p><h2 id="wardrobeTitle">用過關得到的餅乾屑換裝</h2></div><button class="close-menu" id="closeWardrobe" type="button" aria-label="Close">×</button></div>
+                <p class="wardrobe-balance" id="wardrobeBalance">目前有 0 枚餅乾屑</p>
+                <div class="wardrobe-grid" id="wardrobeGrid"></div>
+              </div>
+            </div>
+          </div>
+          <div class="game-foot">
+            <span id="liveStatus">準備出巢。</span>
+            <div class="foot-actions"><button class="back-button" id="backToMenuButton" type="button">← 關卡目錄</button><span class="control-key" data-i18n="controls">手機：拖曳　·　電腦：拖曳、WASD 或方向鍵</span><button class="next-button" id="nextLevelButton" type="button" hidden>下一關 →</button></div>
+          </div>
+        </section>
+      </section>
+    </main>
+    <script src="poki-adapter.js"></script>
+    <script src="game.js"></script>
+  </body>
+</html>
