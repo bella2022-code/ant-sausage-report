@@ -46,7 +46,7 @@
       recruitKicker:'巢口招募', recruitTitle:'讓同伴聞見消息', recruitCopy:'017 正在用觸角與氣味召集同伴。等一下，蟻群就會沿路出發。', recruitLine:'「跟著我的氣味走！」', recruitLabel:'招募中', recruitHint:'螞蟻正在出巢', recruitStatus:'一、二、三……更多腳步聲！',
       carryKicker:'搬運任務', carryTitle:'一起把它搬回家', carryCopy:'拖曳火腿腸前進。繞開石頭與水窪，讓隊伍把大餐帶回蟻巢。', carryLine:'「左邊兩隻拉，後面一起推！」', carryLabel:'集體搬運', carryHint:'按住火腿腸並拖曳指揮', carryStatus:'避開石頭和水窪。',
       doneKicker:'任務完成', doneTitle:'017 證明了自己', doneCopy:'火腿腸安全入庫。這次所有螞蟻都相信 017 的報告了。', doneLine:'「我就說過吧！」', doneLabel:'火腿腸已入巢', doneHint:'按重新開始再玩一次', doneStatus:'野餐墊失物案：結案。',
-      found:'找到食物！', decoy:'糟糕，這是石頭！真正的食物在別處。', rush:'食物快被搬走了！直接帶隊救援。', recruiting:'017 正在招募同伴', depart:'蟻群跟著氣味線出發！', rock:'石頭太近了！繞過去。', puddle:'水窪會沖散隊伍！', rival:'那是隔壁紅螞蟻的巢穴，不能靠近！', delivering:'大家抓緊，一起搬進巢穴！', nest:'蟻巢', stone:'石頭', water:'水窪', rivalNest:'紅螞蟻巢穴', patrol:'巡邏中', foodSausage:'火腿腸', foodCrescent:'彎彎火腿', foodMeatball:'肉丸', foodSquare:'午餐肉', foodBaguette:'麵包棒', foodDonut:'甜甜圈', foodCheese:'起司角', foodHeart:'愛心火腿', success:'食物安全入巢！', successSub:'017 的報告是真的。', ready:'準備出巢。', leaving:'017 出巢了。'
+      found:'找到食物！', decoy:'糟糕，這是石頭！真正的食物在別處。', rush:'食物快被搬走了！直接帶隊救援。', recruiting:'017 正在招募同伴', depart:'蟻群跟著氣味線出發！', rock:'石頭太近了！繞過去。', puddle:'水窪會沖散隊伍！', rival:'那是隔壁紅螞蟻的巢穴，不能靠近！', straggler:'等等！有一隻螞蟻掉隊了！', rejoined:'「回來了！」隊伍又整齊了。', delivering:'大家抓緊，一起搬進巢穴！', nest:'蟻巢', stone:'石頭', water:'水窪', rivalNest:'紅螞蟻巢穴', patrol:'巡邏中', foodSausage:'火腿腸', foodCrescent:'彎彎火腿', foodMeatball:'肉丸', foodSquare:'午餐肉', foodBaguette:'麵包棒', foodDonut:'甜甜圈', foodCheese:'起司角', foodHeart:'愛心火腿', success:'食物安全入巢！', successSub:'017 的報告是真的。', ready:'準備出巢。', leaving:'017 出巢了。'
     },
     en: {
       brandTitle:'Sausage Report', chapter:'Chapter 01 · Picnic Blanket Case', restart:'Restart', back:'← Previous', levelMenu:'Level select', levelMenuEyebrow:'MISSION DIRECTORY', levelMenuTitle:'Choose a scouting level',
@@ -58,7 +58,7 @@
       recruitKicker:'NEST RECRUITMENT', recruitTitle:'Let the colony smell the news', recruitCopy:'017 is calling with antennae and scent. The colony will follow the trail soon.', recruitLine:'“Follow my trail!”', recruitLabel:'RECRUITING', recruitHint:'The colony is leaving the nest', recruitStatus:'One, two, three… more footsteps!',
       carryKicker:'CARRY MISSION', carryTitle:'Bring it home together', carryCopy:'Drag the sausage. Avoid the stone and puddle, and bring the feast into the nest.', carryLine:'“Two pull left, everyone else push!”', carryLabel:'TEAM CARRY', carryHint:'Hold the sausage and drag to guide', carryStatus:'Avoid the stone and puddle.',
       doneKicker:'MISSION COMPLETE', doneTitle:'017 proved it', doneCopy:'The sausage is safe in storage. Everyone believes 017 now.', doneLine:'“Told you so!”', doneLabel:'SAUSAGE STORED', doneHint:'Press Restart to play again', doneStatus:'Picnic Blanket Case: closed.',
-      found:'Food found!', decoy:'Oh no, it is a stone! The real food is elsewhere.', rush:'The food is about to disappear! Lead a rescue team now.', recruiting:'017 is recruiting the colony', depart:'The ants follow the scent trail!', rock:'The stone is too close. Go around!', puddle:'The puddle will scatter the team!', rival:'That is the red ants’ nest. Keep away!', delivering:'Hold tight — carry it into the nest!', nest:'NEST', stone:'STONE', water:'PUDDLE', rivalNest:'RED ANT NEST', patrol:'PATROLLING', foodSausage:'SAUSAGE', foodCrescent:'CURLY HAM', foodMeatball:'MEATBALL', foodSquare:'LUNCHEON MEAT', foodBaguette:'BREADSTICK', foodDonut:'DONUT', foodCheese:'CHEESE WEDGE', foodHeart:'HEART HAM', success:'Food safely stored!', successSub:'017’s report was true.', ready:'Ready to leave the nest.', leaving:'017 leaves the nest.'
+      found:'Food found!', decoy:'Oh no, it is a stone! The real food is elsewhere.', rush:'The food is about to disappear! Lead a rescue team now.', recruiting:'017 is recruiting the colony', depart:'The ants follow the scent trail!', rock:'The stone is too close. Go around!', puddle:'The puddle will scatter the team!', rival:'That is the red ants’ nest. Keep away!', straggler:'Wait! One ant fell behind!', rejoined:'“I’m back!” The line is whole again.', delivering:'Hold tight — carry it into the nest!', nest:'NEST', stone:'STONE', water:'PUDDLE', rivalNest:'RED ANT NEST', patrol:'PATROLLING', foodSausage:'SAUSAGE', foodCrescent:'CURLY HAM', foodMeatball:'MEATBALL', foodSquare:'LUNCHEON MEAT', foodDonut:'DONUT', foodCheese:'CHEESE WEDGE', foodHeart:'HEART HAM', success:'Food safely stored!', successSub:'017’s report was true.', ready:'Ready to leave the nest.', leaving:'017 leaves the nest.'
     },
     ja: {
       brandTitle:'ソーセージ報告', chapter:'Chapter 01 · ピクニックシート事件', restart:'最初から', back:'← 前のステージ', levelMenu:'ステージ選択', levelMenuEyebrow:'任務一覧', levelMenuTitle:'偵察ステージを選ぶ',
@@ -70,7 +70,7 @@
       recruitKicker:'仲間を集める', recruitTitle:'仲間に知らせよう', recruitCopy:'017 は触角とにおいで仲間を呼んでいる。すぐにアリたちが道をたどる。', recruitLine:'「このにおいについてきて！」', recruitLabel:'集合中', recruitHint:'アリたちが巣から出発中', recruitStatus:'一匹、二匹、三匹……足音が増える！',
       carryKicker:'運搬任務', carryTitle:'みんなで巣へ運ぼう', carryCopy:'ソーセージをドラッグしよう。石と水たまりを避け、巣まで運ぼう。', carryLine:'「左の二匹は引いて、後ろは押して！」', carryLabel:'協力運搬', carryHint:'ソーセージを押してドラッグ', carryStatus:'石と水たまりに注意。',
       doneKicker:'任務完了', doneTitle:'017 が証明した', doneCopy:'ソーセージは無事に保管された。みんなが017を信じてくれた。', doneLine:'「だから言ったでしょ！」', doneLabel:'ソーセージを保管', doneHint:'最初から を押してもう一度', doneStatus:'ピクニックシート事件：解決。',
-      found:'食べ物を発見！', decoy:'しまった、石だった！本物の食べ物は別の場所にある。', rush:'食べ物がなくなる！すぐに救援隊を動かそう。', recruiting:'017 が仲間を集めている', depart:'アリたちがにおいの道をたどる！', rock:'石が近すぎる。回り込もう！', puddle:'水たまりで隊列がばらばらに！', rival:'ここは赤アリの巣。近づかないで！', delivering:'みんな、つかまって！巣へ運ぼう！', nest:'アリの巣', stone:'石', water:'水たまり', rivalNest:'赤アリの巣', patrol:'巡回中', foodSausage:'ソーセージ', foodCrescent:'曲がったハム', foodMeatball:'ミートボール', foodSquare:'ランチョンミート', foodBaguette:'パン棒', foodDonut:'ドーナツ', foodCheese:'チーズ', foodHeart:'ハートハム', success:'食べ物を無事に保管！', successSub:'017 の報告は本当だった。', ready:'巣を出る準備完了。', leaving:'017 が巣を出た。'
+      found:'食べ物を発見！', decoy:'しまった、石だった！本物の食べ物は別の場所にある。', rush:'食べ物がなくなる！すぐに救援隊を動かそう。', recruiting:'017 が仲間を集めている', depart:'アリたちがにおいの道をたどる！', rock:'石が近すぎる。回り込もう！', puddle:'水たまりで隊列がばらばらに！', rival:'ここは赤アリの巣。近づかないで！', straggler:'待って！一匹が遅れている！', rejoined:'「戻ったよ！」列がそろった。', delivering:'みんな、つかまって！巣へ運ぼう！', nest:'アリの巣', stone:'石', water:'水たまり', rivalNest:'赤アリの巣', patrol:'巡回中', foodSausage:'ソーセージ', foodCrescent:'曲がったハム', foodMeatball:'ミートボール', foodSquare:'ランチョンミート', foodBaguette:'パン棒', foodDonut:'ドーナツ', foodCheese:'チーズ', foodHeart:'ハートハム', success:'食べ物を無事に保管！', successSub:'017 の報告は本当だった。', ready:'巣を出る準備完了。', leaving:'017 が巣を出た。'
     }
   };
   let locale = 'zh-Hant';
@@ -280,7 +280,7 @@
     state = {
       phase: rush ? 'carry' : 'scout', scout: { x: nest.x + 8, y: nest.y + 2, a: -0.6, found: false },
       sausage: { x: decoyPoint?.x ?? sausageStart.x, y: decoyPoint?.y ?? sausageStart.y, a: -0.12, scale: 1 },
-      trail: [], team: [], recruitAt: 0, followStart: 0, complete: false, burst: [], notice: null, jump: null, jumpUsed: false, bridgeBuilt:false, bites: 0, skewerRemoved: !foodConfig.skewer, fragmented: false, patrolStart: performance.now()
+      trail: [], team: [], recruitAt: 0, followStart: 0, complete: false, burst: [], notice: null, jump: null, jumpUsed: false, bridgeBuilt:false, bites: 0, skewerRemoved: !foodConfig.skewer, fragmented: false, patrolStart: performance.now(), straggler:null, stragglerSeen:false, stragglerAt:performance.now() + 4400, stragglerEligible:levelIndex % 4 === 2
     };
     if (rush) { state.team = Array.from({ length: 16 }, (_, i) => ({ offset: i * Math.PI * 2 / 16, bob: Math.random() * Math.PI * 2 })); state.notice = { text:t('rush'), until:performance.now() + 1600 }; }
     pointer = null; held = false; last = performance.now();
@@ -418,6 +418,7 @@
     }
     if (state.phase === 'follow' && now - state.followStart > 2100) {
       state.phase = !state.skewerRemoved ? 'cut' : foodConfig.fragment && !state.fragmented ? 'split' : 'carry';
+      if (state.phase === 'carry') state.stragglerAt = now + 3800;
       state.notice = { text: state.phase === 'cut' ? t('cutHint') : state.phase === 'split' ? t('splitHint') : t('depart'), until: now + 1400 }; setUi();
     }
     const carryTarget = pointer || (hasKeys ? { x: state.sausage.x + keyboardDirection.x * 160, y: state.sausage.y + keyboardDirection.y * 160 } : null);
@@ -456,6 +457,14 @@
         state.delivery = { x:s.x, y:s.y, startedAt:now };
         state.notice = { text: t('delivering'), until: now + 1100 };
       }
+    }
+    if (state.phase === 'carry' && state.stragglerEligible && !state.stragglerSeen && !state.straggler && now > state.stragglerAt) {
+      state.straggler = { startedAt:now, until:now + 2500, grip:3 };
+      state.notice = { text:t('straggler'), until:now + 1700 };
+    }
+    if (state.straggler && now >= state.straggler.until) {
+      state.straggler = null; state.stragglerSeen = true;
+      state.notice = { text:t('rejoined'), until:now + 1500 };
     }
     state.burst.forEach(b => b.r += b.v * dt / 1000);
     state.burst = state.burst.filter(b => b.r < 135);
@@ -639,11 +648,26 @@
           [-86,-12,0],[-87,13,0],[86,-12,Math.PI],[87,13,Math.PI]
         ];
     grips.forEach(([gx,gy,dir],i)=>{
+      if (state.straggler && i === state.straggler.grip) return;
       const bob = Math.sin(now / 130 + i * 1.7) * 2.4;
       const x=s.x+Math.cos(s.a)*(gx*foodScale)-Math.sin(s.a)*((gy+bob)*foodScale);
       const y=s.y-(s.lift||0)+Math.sin(s.a)*(gx*foodScale)+Math.cos(s.a)*((gy+bob)*foodScale);
       drawAnt(x,y,s.a+dir,.48*Math.max(.55,foodScale));
     });
+    if (state.straggler) {
+      const lost = state.straggler;
+      const progress = Math.min(1, (now - lost.startedAt) / (lost.until - lost.startedAt));
+      const lag = 178 - progress * 88;
+      const x = s.x - Math.cos(s.a) * lag + Math.sin(s.a) * 34;
+      const y = s.y - (s.lift || 0) - Math.sin(s.a) * lag - Math.cos(s.a) * 34;
+      drawAnt(x, y, s.a + .25, .48 * Math.max(.55,foodScale));
+      rr(x - 37, y - 43, 74, 24, 12, 'rgba(255,250,242,.93)');
+      label(locale === 'en' ? 'Wait for me!' : locale === 'ja' ? '待って！' : '等等我！', x, y - 31, 11, ui.ink);
+      const callerX = s.x - Math.cos(s.a) * 72 - Math.sin(s.a) * 50;
+      const callerY = s.y - Math.sin(s.a) * 72 + Math.cos(s.a) * 50;
+      rr(callerX - 34, callerY - 39, 68, 22, 11, 'rgba(255,250,242,.93)');
+      label(locale === 'en' ? 'Hey!' : locale === 'ja' ? 'こっち！' : '快跟上！', callerX, callerY - 28, 10, ui.ink);
+    }
     const leaderX=s.x-110*foodScale*Math.cos(s.a), leaderY=s.y-(s.lift||0)-110*foodScale*Math.sin(s.a);
     drawAnt(leaderX,leaderY,s.a,.7*Math.max(.55,foodScale),true);
     label('017',leaderX,leaderY+24,12,ui.ink);
@@ -717,10 +741,11 @@
       if (state.bites >= 3) {
         state.skewerRemoved = true; state.bites = 0;
         state.phase = foodConfig.fragment && !state.fragmented ? 'split' : 'carry';
+        if (state.phase === 'carry') state.stragglerAt = performance.now() + 3800;
         state.notice = { text: state.phase === 'split' ? t('splitHint') : t('depart'), until: performance.now() + 1200 };
       } else state.notice = { text: `${t('bite')} ${state.bites} / 3`, until: performance.now() + 700 };
     } else if (state.bites >= 2) {
-      state.fragmented = true; state.bites = 0; state.phase = 'carry';
+      state.fragmented = true; state.bites = 0; state.phase = 'carry'; state.stragglerAt = performance.now() + 3800;
       state.notice = { text: t('depart'), until: performance.now() + 1200 };
     } else state.notice = { text: `${t('split')} ${state.bites} / 2`, until: performance.now() + 700 };
     setUi();
