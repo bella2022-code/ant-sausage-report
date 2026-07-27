@@ -23,6 +23,7 @@
   const closeLevelMenu = document.getElementById('closeLevelMenu');
   const levelGrid = document.getElementById('levelGrid');
   const jumpButton = document.getElementById('jumpButton');
+  const bridgeButton = document.getElementById('bridgeButton');
   const biteButton = document.getElementById('biteButton');
   const backToMenuButton = document.getElementById('backToMenuButton');
   const crumbBank = document.getElementById('crumbBank');
@@ -39,7 +40,7 @@
       brandTitle:'火腿腸報告', chapter:'Chapter 01 · 野餐墊失物案', restart:'重新開始', back:'← 上一關', levelMenu:'關卡目錄', levelMenuEyebrow:'任務目錄', levelMenuTitle:'選擇要偵查的關卡',
       objectiveFind:'發現食物', objectiveReturn:'留下氣味回巢', objectiveCarry:'合力搬回家',
       introEyebrow:'017 的第一個任務', introTitle:'火腿腸，消失前快報告。', introCopy:'找到食物、回巢留下氣味，再帶同伴避開障礙把它搬回家。', start:'開始任務',
-      controls:'手機：點一下目的地　·　電腦：拖曳、WASD、方向鍵、空白鍵跳躍、E 咬斷', next:'下一關 →', jump:'跳！', bite:'咬斷', split:'分碎', bigWater:'超大水窪', jumpHint:'靠近水邊時按「跳！」或空白鍵', cutHint:'竹籤還卡著！按「咬斷」或 E。', splitHint:'食物太大了！按「分碎」或 E。', doneTag:'已完成', aria:'017 火腿腸報告遊戲。點擊或拖曳主角螞蟻移動。',
+      controls:'手機：點一下目的地　·　電腦：拖曳、WASD、方向鍵、空白鍵跳躍、E 咬斷', next:'下一關 →', jump:'跳！', bridge:'架橋！', bridgeLeaves:'先找齊三片葉子，才能架橋。', bridgeNear:'靠近大水窪後按「架橋！」', bridgeBuilt:'螞蟻們把葉子排成了一座活橋！', bite:'咬斷', split:'分碎', bigWater:'超大水窪', jumpHint:'靠近水邊時按「跳！」或空白鍵', cutHint:'竹籤還卡著！按「咬斷」或 E。', splitHint:'食物太大了！按「分碎」或 E。', doneTag:'已完成', aria:'017 火腿腸報告遊戲。點擊或拖曳主角螞蟻移動。',
       scoutKicker:'偵查任務', scoutTitle:'找到那根火腿腸', scoutCopy:'017 聞到一股可疑的肉香。手機點一下目的地；電腦可拖曳或用 WASD，靠近粉紅色火腿腸。', scoutLine:'「這次我真的聞到了。」', scoutLabel:'偵查階段', scoutHint:'點一下目的地，017 會自己走過去', scoutStatus:'沿著肉香前進。',
       returnKicker:'回巢報信', returnTitle:'快把消息帶回家', returnCopy:'017 要一邊跑回蟻巢、一邊留下氣味。這樣同伴才能跟著路線找到食物。', returnLine:'「大家，真的有火腿腸！」', returnLabel:'報信階段', returnHint:'帶著 017 回到蟻巢', returnStatus:'粉紅氣味線正在留下。',
       recruitKicker:'巢口招募', recruitTitle:'讓同伴聞見消息', recruitCopy:'017 正在用觸角與氣味召集同伴。等一下，蟻群就會沿路出發。', recruitLine:'「跟著我的氣味走！」', recruitLabel:'招募中', recruitHint:'螞蟻正在出巢', recruitStatus:'一、二、三……更多腳步聲！',
@@ -51,7 +52,7 @@
       brandTitle:'Sausage Report', chapter:'Chapter 01 · Picnic Blanket Case', restart:'Restart', back:'← Previous', levelMenu:'Level select', levelMenuEyebrow:'MISSION DIRECTORY', levelMenuTitle:'Choose a scouting level',
       objectiveFind:'Find the food', objectiveReturn:'Scent a trail home', objectiveCarry:'Carry it home',
       introEyebrow:'017’s first mission', introTitle:'Report the sausage before it disappears.', introCopy:'Find it, leave a scent trail home, then lead the colony around obstacles.', start:'Start mission',
-      controls:'Mobile: tap a destination · Desktop: drag, WASD, arrows, Space to jump, E to bite', next:'Next level →', jump:'JUMP!', bite:'BITE', split:'SPLIT', bigWater:'GIANT PUDDLE', jumpHint:'At the edge, press JUMP or Space', cutHint:'The bamboo skewer is stuck. Press BITE or E.', splitHint:'This food is too large. Press SPLIT or E.', doneTag:'Complete', aria:'017 Sausage Report game. Tap or drag to move the scout ant.',
+      controls:'Mobile: tap a destination · Desktop: drag, WASD, arrows, Space to jump, E to bite', next:'Next level →', jump:'JUMP!', bridge:'BRIDGE!', bridgeLeaves:'Find all three leaves before building the bridge.', bridgeNear:'At the giant puddle, press BRIDGE!', bridgeBuilt:'The colony arranges the leaves into a living bridge!', bite:'BITE', split:'SPLIT', bigWater:'GIANT PUDDLE', jumpHint:'At the edge, press JUMP or Space', cutHint:'The bamboo skewer is stuck. Press BITE or E.', splitHint:'This food is too large. Press SPLIT or E.', doneTag:'Complete', aria:'017 Sausage Report game. Tap or drag to move the scout ant.',
       scoutKicker:'SCOUT MISSION', scoutTitle:'Find the sausage', scoutCopy:'017 catches a suspicious meaty scent. On mobile, tap a destination; on desktop, drag or use WASD to approach the pink sausage.', scoutLine:'“I really smelled it this time.”', scoutLabel:'SCOUTING', scoutHint:'Tap a destination — 017 walks there', scoutStatus:'Follow the scent.',
       returnKicker:'REPORT HOME', returnTitle:'Take the news home', returnCopy:'017 runs back while leaving a scent trail, so the colony can find the food.', returnLine:'“Everyone, there really is a sausage!”', returnLabel:'REPORTING', returnHint:'Bring 017 back to the nest', returnStatus:'A pink scent trail is forming.',
       recruitKicker:'NEST RECRUITMENT', recruitTitle:'Let the colony smell the news', recruitCopy:'017 is calling with antennae and scent. The colony will follow the trail soon.', recruitLine:'“Follow my trail!”', recruitLabel:'RECRUITING', recruitHint:'The colony is leaving the nest', recruitStatus:'One, two, three… more footsteps!',
@@ -63,7 +64,7 @@
       brandTitle:'ソーセージ報告', chapter:'Chapter 01 · ピクニックシート事件', restart:'最初から', back:'← 前のステージ', levelMenu:'ステージ選択', levelMenuEyebrow:'任務一覧', levelMenuTitle:'偵察ステージを選ぶ',
       objectiveFind:'食べ物を見つける', objectiveReturn:'においを残して巣へ', objectiveCarry:'みんなで巣へ運ぶ',
       introEyebrow:'017、最初の任務', introTitle:'ソーセージが消える前に報告！', introCopy:'食べ物を見つけ、においの道を巣まで残して、仲間と障害物を避けて運ぼう。', start:'任務を始める',
-      controls:'スマホ：目的地をタップ　·　PC：ドラッグ、WASD、矢印キー、Spaceでジャンプ、Eでかみ切る', next:'次のステージ →', jump:'ジャンプ！', bite:'かみ切る', split:'分ける', bigWater:'大きな水たまり', jumpHint:'水ぎわでジャンプかSpaceを押す', cutHint:'竹串が刺さっている！かみ切るか E を押す。', splitHint:'食べ物が大きすぎる！分けるか E を押す。', doneTag:'クリア', aria:'017 ソーセージ報告ゲーム。タップまたはドラッグで偵察アリを動かします。',
+      controls:'スマホ：目的地をタップ　·　PC：ドラッグ、WASD、矢印キー、Spaceでジャンプ、Eでかみ切る', next:'次のステージ →', jump:'ジャンプ！', bridge:'橋を作る！', bridgeLeaves:'葉っぱを3枚集めてから橋を作ろう。', bridgeNear:'大きな水たまりで「橋を作る！」を押そう。', bridgeBuilt:'仲間が葉っぱを並べて、生きた橋になった！', bite:'かみ切る', split:'分ける', bigWater:'大きな水たまり', jumpHint:'水ぎわでジャンプかSpaceを押す', cutHint:'竹串が刺さっている！かみ切るか E を押す。', splitHint:'食べ物が大きすぎる！分けるか E を押す。', doneTag:'クリア', aria:'017 ソーセージ報告ゲーム。タップまたはドラッグで偵察アリを動かします。',
       scoutKicker:'偵察任務', scoutTitle:'ソーセージを探そう', scoutCopy:'017 はあやしい肉のにおいを感じた。スマホなら目的地をタップ、PCならドラッグか WASD でピンクのソーセージへ近づこう。', scoutLine:'「今度こそ、本当ににおった。」', scoutLabel:'偵察中', scoutHint:'目的地をタップすると017が歩く', scoutStatus:'においをたどろう。',
       returnKicker:'巣へ報告', returnTitle:'知らせを巣へ持ち帰ろう', returnCopy:'017 はにおいの道を残しながら巣へ走る。仲間はその道をたどれる。', returnLine:'「みんな、本当にソーセージだよ！」', returnLabel:'報告中', returnHint:'017 を巣へ連れて帰る', returnStatus:'ピンクのにおいの道が残っている。',
       recruitKicker:'仲間を集める', recruitTitle:'仲間に知らせよう', recruitCopy:'017 は触角とにおいで仲間を呼んでいる。すぐにアリたちが道をたどる。', recruitLine:'「このにおいについてきて！」', recruitLabel:'集合中', recruitHint:'アリたちが巣から出発中', recruitStatus:'一匹、二匹、三匹……足音が増える！',
@@ -186,14 +187,14 @@
     { nest:{ x:840, y:130, r:61 }, food:{ x:132, y:418, shape:'donut', key:'foodDonut', radius:55, skewer:true }, rock:{ x:462, y:404, r:67 }, puddle:{ x:631, y:234, rx:102, ry:48 }, rival:{ x:386, y:160, r:75 } },
     { mode:'night', nest:{ x:118, y:434, r:54 }, food:{ x:808, y:142, shape:'cheese', key:'foodCheese', radius:48 }, rock:{ x:544, y:145, r:62 }, puddle:{ x:287, y:315, rx:100, ry:50 }, rival:{ x:566, y:402, r:80 } },
     { nest:{ x:840, y:430, r:70 }, food:{ x:126, y:130, shape:'heart', key:'foodHeart', radius:62 }, rock:{ x:428, y:290, r:68 }, puddle:{ x:715, y:240, rx:96, ry:48 }, rival:{ x:650, y:408, r:76 } },
-    { nest:{ x:480, y:458, r:48 }, food:{ x:130, y:115, shape:'meatball', key:'foodMeatball', radius:42 }, rock:{ x:275, y:285, r:64 }, puddle:{ x:674, y:360, rx:164, ry:78, huge:true }, rival:{ x:730, y:136, r:72 } },
+    { nest:{ x:480, y:458, r:48 }, food:{ x:130, y:115, shape:'meatball', key:'foodMeatball', radius:42 }, rock:{ x:275, y:285, r:64 }, puddle:{ x:674, y:360, rx:164, ry:78, huge:true, bridge:true }, bridgeLeaves:[{x:214,y:166,a:-.7},{x:410,y:120,a:.5},{x:615,y:268,a:-.2}], rival:{ x:730, y:136, r:72 } },
     { mode:'rush', nest:{ x:850, y:280, r:66 }, food:{ x:105, y:284, shape:'baguette', key:'foodBaguette', radius:68 }, rock:{ x:480, y:146, r:62 }, puddle:{ x:455, y:430, rx:104, ry:48 }, rival:{ x:626, y:270, r:74 } },
     { nest:{ x:116, y:126, r:45 }, food:{ x:840, y:427, shape:'square', key:'foodSquare', radius:46, skewer:true }, rock:{ x:344, y:200, r:64 }, puddle:{ x:685, y:310, rx:104, ry:49 }, rival:{ x:520, y:426, r:77 } },
     { mode:'decoy', decoy:{x:390,y:425}, nest:{ x:852, y:126, r:55 }, food:{ x:112, y:426, shape:'crescent', key:'foodCrescent', radius:58 }, rock:{ x:688, y:440, r:61 }, puddle:{ x:332, y:236, rx:96, ry:47 }, rival:{ x:500, y:310, r:78 } },
-    { nest:{ x:114, y:428, r:74 }, food:{ x:834, y:132, shape:'donut', key:'foodDonut', radius:55 }, rock:{ x:685, y:205, r:65 }, puddle:{ x:350, y:397, rx:176, ry:80, huge:true }, rival:{ x:460, y:170, r:74 } },
+    { nest:{ x:114, y:428, r:74 }, food:{ x:834, y:132, shape:'donut', key:'foodDonut', radius:55 }, rock:{ x:685, y:205, r:65 }, puddle:{ x:350, y:397, rx:176, ry:80, huge:true, bridge:true }, bridgeLeaves:[{x:210,y:210,a:.2},{x:470,y:120,a:-.5},{x:610,y:360,a:.7}], rival:{ x:460, y:170, r:74 } },
     { nest:{ x:848, y:435, r:42 }, food:{ x:120, y:122, shape:'cheese', key:'foodCheese', radius:48 }, rock:{ x:380, y:382, r:67 }, puddle:{ x:640, y:155, rx:101, ry:47 }, rival:{ x:524, y:290, r:81 } },
     { nest:{ x:485, y:112, r:63 }, food:{ x:480, y:440, shape:'sausage', key:'foodSausage', radius:52 }, rock:{ x:265, y:278, r:63 }, puddle:{ x:715, y:295, rx:105, ry:49 }, rival:{ x:492, y:300, r:75 } },
-    { mode:'night', nest:{ x:480, y:430, r:71 }, food:{ x:480, y:112, shape:'heart', key:'foodHeart', radius:62, skewer:true, fragment:true }, rock:{ x:282, y:168, r:66 }, puddle:{ x:690, y:400, rx:180, ry:82, huge:true }, rival:{ x:478, y:275, r:82 } },
+    { mode:'night', nest:{ x:480, y:430, r:71 }, food:{ x:480, y:112, shape:'heart', key:'foodHeart', radius:62, skewer:true, fragment:true }, rock:{ x:282, y:168, r:66 }, puddle:{ x:690, y:400, rx:180, ry:82, huge:true, bridge:true }, bridgeLeaves:[{x:150,y:310,a:-.4},{x:670,y:160,a:.5},{x:835,y:290,a:-.7}], rival:{ x:478, y:275, r:82 } },
     { nest:{ x:108, y:270, r:48 }, food:{ x:836, y:270, shape:'meatball', key:'foodMeatball', radius:42 }, rock:{ x:454, y:154, r:68 }, puddle:{ x:455, y:382, rx:128, ry:58 }, rival:{ x:690, y:170, r:76 } },
     { patrol:true, nest:{ x:850, y:430, r:41 }, food:{ x:128, y:112, shape:'sausage', key:'foodSausage', radius:52, skewer:true }, rock:{ x:370, y:286, r:66 }, puddle:{ x:674, y:215, rx:108, ry:50 }, rival:{ x:548, y:420, r:78 } },
     { mode:'rush', nest:{ x:112, y:430, r:58 }, food:{ x:842, y:120, shape:'crescent', key:'foodCrescent', radius:58 }, rock:{ x:482, y:285, r:70 }, puddle:{ x:655, y:420, rx:170, ry:76, huge:true }, rival:{ x:290, y:150, r:72 } },
@@ -216,10 +217,10 @@
     { mode:'night', patrol:true, nest:{ x:486, y:432, r:52 }, food:{ x:480, y:104, shape:'square', key:'foodSquare', radius:46, skewer:true, fragment:true }, rock:{ x:274, y:225, r:68 }, puddle:{ x:690, y:384, rx:174, ry:80, huge:true }, rival:{ x:490, y:278, r:82 } }
   ];
   let levelIndex = 0;
-  let nest, sausageStart, rock, puddle, rivalNest, foodConfig, missionMode, decoyPoint, mapTheme;
+  let nest, sausageStart, rock, puddle, rivalNest, foodConfig, missionMode, decoyPoint, mapTheme, bridgeLeaves;
   function loadLevel(index) {
     const level = levels[index];
-    nest = { ...level.nest }; sausageStart = { x:level.food.x, y:level.food.y }; foodConfig = { ...level.food }; rock = { ...level.rock }; puddle = { ...level.puddle }; rivalNest = level.rival ? { ...level.rival, patrol:!!level.patrol, homeX:level.rival.x, homeY:level.rival.y } : null; missionMode = level.mode || 'standard'; decoyPoint = level.decoy ? { ...level.decoy } : null; mapTheme = ['blanket','tile','garden','desk'][index % 4];
+    nest = { ...level.nest }; sausageStart = { x:level.food.x, y:level.food.y }; foodConfig = { ...level.food }; rock = { ...level.rock }; puddle = { ...level.puddle }; rivalNest = level.rival ? { ...level.rival, patrol:!!level.patrol, homeX:level.rival.x, homeY:level.rival.y } : null; missionMode = level.mode || 'standard'; decoyPoint = level.decoy ? { ...level.decoy } : null; bridgeLeaves = (level.bridgeLeaves || []).map(leaf => ({ ...leaf, collected:false })); mapTheme = ['blanket','tile','garden','desk'][index % 4];
   }
   function currentFoodRadius() { return state?.fragmented ? foodConfig.radius * .62 : foodConfig.radius; }
   const ui = { ink: '#342b25', paper: '#fffaf2', coral: '#d97872', coralDark: '#b95251', moss: '#7e936c', gold: '#d8a34e', blue: '#9cc9d2', muted: '#7c6b61' };
@@ -279,7 +280,7 @@
     state = {
       phase: rush ? 'carry' : 'scout', scout: { x: nest.x + 8, y: nest.y + 2, a: -0.6, found: false },
       sausage: { x: decoyPoint?.x ?? sausageStart.x, y: decoyPoint?.y ?? sausageStart.y, a: -0.12, scale: 1 },
-      trail: [], team: [], recruitAt: 0, followStart: 0, complete: false, burst: [], notice: null, jump: null, jumpUsed: false, bites: 0, skewerRemoved: !foodConfig.skewer, fragmented: false, patrolStart: performance.now()
+      trail: [], team: [], recruitAt: 0, followStart: 0, complete: false, burst: [], notice: null, jump: null, jumpUsed: false, bridgeBuilt:false, bites: 0, skewerRemoved: !foodConfig.skewer, fragmented: false, patrolStart: performance.now()
     };
     if (rush) { state.team = Array.from({ length: 16 }, (_, i) => ({ offset: i * Math.PI * 2 / 16, bob: Math.random() * Math.PI * 2 })); state.notice = { text:t('rush'), until:performance.now() + 1600 }; }
     pointer = null; held = false; last = performance.now();
@@ -291,7 +292,9 @@
   function setUi() {
     const stageWord = locale === 'en' ? 'LEVEL' : locale === 'ja' ? 'ステージ' : '關卡';
     levelIndicator.textContent = `${stageWord} ${levelIndex + 1} / ${levels.length}`;
-    jumpButton.hidden = !(puddle && puddle.huge && state && state.phase === 'carry' && !state.jumpUsed);
+    jumpButton.hidden = !(puddle && puddle.huge && !puddle.bridge && state && state.phase === 'carry' && !state.jumpUsed);
+    bridgeButton.hidden = !(puddle?.bridge && state && state.phase === 'carry' && !state.bridgeBuilt);
+    bridgeButton.textContent = t('bridge');
     biteButton.hidden = !(state && ['cut','split'].includes(state.phase));
     biteButton.textContent = state?.phase === 'split' ? t('split') : t('bite');
     if (state.complete) {
@@ -385,6 +388,13 @@
         state.trail.push({ x: state.scout.x, y: state.scout.y });
         if (state.trail.length > 520) state.trail.shift();
       }
+      bridgeLeaves.forEach(leaf => {
+        if (!leaf.collected && distance(state.scout, leaf) < 28) {
+          leaf.collected = true;
+          const remaining = bridgeLeaves.filter(item => !item.collected).length;
+          state.notice = { text: remaining ? `${t('bridgeLeaves')} (${3 - remaining}/3)` : t('bridgeNear'), until:now + 1500 };
+        }
+      });
       if (!state.scout.found && distance(state.scout, state.sausage) < currentFoodRadius() + 18) {
         if (missionMode === 'decoy' && decoyPoint) {
           decoyPoint = null;
@@ -434,10 +444,10 @@
         const step = Math.min(d, 120 * dt / 1000);
         const next = { x: s.x + dx / d * step, y: s.y + dy / d * step };
         const rivalTooNear = rivalNest && distance(next, rivalNest) < rivalNest.r + currentFoodRadius();
-        if (distance(next, rock) > rock.r + currentFoodRadius() && !ellipseContains(next.x, next.y) && !rivalTooNear) {
+        if (distance(next, rock) > rock.r + currentFoodRadius() && (!ellipseContains(next.x, next.y) || state.bridgeBuilt) && !rivalTooNear) {
           s.x = next.x; s.y = next.y; s.a = Math.atan2(dy, dx);
         } else if (!state.notice || now > state.notice.until - 500) {
-          state.notice = { text: distance(next, rock) <= rock.r + currentFoodRadius() ? t('rock') : rivalTooNear ? t('rival') : t('puddle'), until: now + 1050 };
+          state.notice = { text: distance(next, rock) <= rock.r + currentFoodRadius() ? t('rock') : rivalTooNear ? t('rival') : puddle.bridge ? t('bridgeNear') : t('puddle'), until: now + 1050 };
         }
       }
       if (distance(s, nest) < nest.r - 2) {
@@ -513,6 +523,21 @@
   function drawPuddle() {
     ctx.save(); ctx.translate(puddle.x, puddle.y); ctx.fillStyle = puddle.huge ? 'rgba(102,177,195,.7)' : 'rgba(137,197,210,.55)'; ctx.beginPath(); ctx.ellipse(0,0,puddle.rx,puddle.ry, -.12, 0, Math.PI*2); ctx.fill();
     ctx.strokeStyle = 'rgba(255,255,255,.75)'; ctx.lineWidth = puddle.huge ? 5 : 3; ctx.beginPath(); ctx.ellipse(-9,-5,puddle.rx*.55,puddle.ry*.42,-.15,.2,2.8); ctx.stroke(); ctx.restore(); label(puddle.huge ? t('bigWater') : t('water'), puddle.x, puddle.y + puddle.ry + 18, 14, ui.muted);
+  }
+  function drawBridgeLeaves() {
+    bridgeLeaves.forEach(leaf => {
+      if (leaf.collected) return;
+      ctx.save(); ctx.translate(leaf.x, leaf.y); ctx.rotate(leaf.a || -.4);
+      ctx.fillStyle = '#7a9e62'; ctx.beginPath(); ctx.ellipse(0,0,18,8,0,0,Math.PI*2); ctx.fill();
+      ctx.strokeStyle = '#dbe9bf'; ctx.lineWidth = 2; ctx.beginPath(); ctx.moveTo(-13,0); ctx.lineTo(14,0); ctx.stroke(); ctx.restore();
+      label('葉', leaf.x, leaf.y + 20, 11, '#557042');
+    });
+  }
+  function drawBridge() {
+    if (!state.bridgeBuilt) return;
+    ctx.save(); ctx.translate(puddle.x, puddle.y); ctx.rotate(-.12);
+    for (let x = -puddle.rx + 12; x < puddle.rx; x += 26) { rr(x,-12,23,24,5,'#87a86d','#5d7b4d'); }
+    ctx.restore();
   }
   function drawFood() {
     const s = state.sausage; const scale = (s.scale || 1) * (state.fragmented ? .62 : 1); const lift = s.lift || 0; ctx.save(); ctx.translate(s.x,s.y-lift); ctx.rotate(s.a); ctx.scale(scale,scale);
@@ -664,7 +689,7 @@
     nightCtx.globalCompositeOperation = 'source-over';
     ctx.drawImage(nightLayer,0,0);
   }
-  function draw(now) { drawMap(); if(mapTheme === 'garden') drawGrass(); drawPuddle(); drawRock(); drawRivalNest(now); drawNest(); if(state.trail.length>1) path(state.trail,ui.gold,6,.65); drawFood(); if(['cut','split','carry','delivery'].includes(state.phase)) drawTeam(now); else if(state.phase === 'follow') drawFollowTrail(now); else drawScout(); drawRecruit(now); drawNight(); drawOverlay(now); }
+  function draw(now) { drawMap(); if(mapTheme === 'garden') drawGrass(); drawPuddle(); drawBridge(); drawBridgeLeaves(); drawRock(); drawRivalNest(now); drawNest(); if(state.trail.length>1) path(state.trail,ui.gold,6,.65); drawFood(); if(['cut','split','carry','delivery'].includes(state.phase)) drawTeam(now); else if(state.phase === 'follow') drawFollowTrail(now); else drawScout(); drawRecruit(now); drawNight(); drawOverlay(now); }
   function frame(now){const dt=Math.min(32,now-last);last=now;update(dt,now);draw(now);requestAnimationFrame(frame);}
   function tryJump() {
     if (!started || state.phase !== 'carry' || !puddle.huge || state.jumpUsed) return;
@@ -675,6 +700,15 @@
     const end = { x:Math.max(40, Math.min(W - 40, s.x + Math.cos(s.a) * leap)), y:Math.max(40, Math.min(H - 40, s.y + Math.sin(s.a) * leap)) };
     state.jump = { start:{x:s.x,y:s.y}, end, startedAt:performance.now() };
     state.jumpUsed = true; pointer = null; jumpButton.hidden = true;
+  }
+  function tryBuildBridge() {
+    if (!started || state.phase !== 'carry' || !puddle.bridge || state.bridgeBuilt) return;
+    if (bridgeLeaves.some(leaf => !leaf.collected)) { state.notice = { text:t('bridgeLeaves'), until:performance.now() + 1200 }; return; }
+    const s = state.sausage;
+    const nearPuddle = ((s.x - puddle.x) ** 2) / ((puddle.rx + 105) ** 2) + ((s.y - puddle.y) ** 2) / ((puddle.ry + 105) ** 2) < 1;
+    if (!nearPuddle) { state.notice = { text:t('bridgeNear'), until:performance.now() + 1200 }; return; }
+    state.bridgeBuilt = true; bridgeButton.hidden = true;
+    state.notice = { text:t('bridgeBuilt'), until:performance.now() + 1800 };
   }
   function prepareFood() {
     if (!started || !['cut','split'].includes(state.phase)) return;
@@ -734,6 +768,7 @@
   closeWardrobe.addEventListener('click', hideWardrobe);
   backToMenuButton.addEventListener('click', () => chooseLevel((levelIndex - 1 + levels.length) % levels.length));
   jumpButton.addEventListener('click', tryJump);
+  bridgeButton.addEventListener('click', tryBuildBridge);
   biteButton.addEventListener('click', prepareFood);
   try { locale = translations[localStorage.getItem('ant-game-language')] ? localStorage.getItem('ant-game-language') : 'zh-Hant'; } catch (_) {}
   languageSelect.value = locale;
