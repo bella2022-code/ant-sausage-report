@@ -220,7 +220,7 @@
   let nest, sausageStart, rock, puddle, rivalNest, foodConfig, missionMode, decoyPoint, mapTheme, bridgeLeaves, sceneProps;
   function buildSceneProps(theme, index) {
     const shift = (index % 3) * 22;
-    if (theme === 'blanket') return [{ type:'jam', x:650-shift, y:390, r:46 }, { type:'cookie', x:202+shift, y:164, r:30 }, { type:'fork', x:752, y:106, r:0 }];
+    if (theme === 'blanket') return [{ type:'jam', x:650-shift, y:390, r:46 }, { type:'cookie', x:202+shift, y:164, r:36 }, { type:'crumbs', x:338+shift, y:122, r:0 }, { type:'fork', x:752, y:106, r:0 }];
     if (theme === 'tile') return [{ type:'cap', x:270+shift, y:378, r:34 }, { type:'spoon', x:726, y:132, r:0 }, { type:'splash', x:536, y:454, r:28 }];
     if (theme === 'garden') return [{ type:'twig', x:700-shift, y:380, r:42 }, { type:'aphids', x:224, y:164, r:0 }, { type:'leaf', x:838, y:268, r:0 }];
     return [{ type:'pencil', x:286+shift, y:174, r:42 }, { type:'eraser', x:706, y:388, r:34 }, { type:'clip', x:150, y:340, r:0 }];
@@ -535,6 +535,10 @@
         label('果汁',0,prop.r*.78,11,'#a45148');
       } else if (prop.type === 'cookie') {
         ctx.fillStyle='#d79a4c'; ctx.beginPath(); ctx.arc(0,0,prop.r,0,Math.PI*2); ctx.fill(); ctx.fillStyle='#8a542b'; [[-9,-7],[8,-5],[-4,10],[13,9]].forEach(([x,y])=>{ctx.beginPath();ctx.arc(x,y,3,0,Math.PI*2);ctx.fill();});
+      } else if (prop.type === 'crumbs') {
+        const crumbs = [[-32,7,8],[-14,-10,6],[2,3,10],[18,-12,5],[31,9,7],[9,20,4],[-5,26,5]];
+        crumbs.forEach(([x,y,r], i) => { ctx.save(); ctx.translate(x,y); ctx.rotate(i*.7); ctx.fillStyle='#d39447'; ctx.beginPath(); ctx.moveTo(-r,0); ctx.lineTo(-r*.2,-r*.8); ctx.lineTo(r*.9,-r*.3); ctx.lineTo(r*.55,r*.8); ctx.closePath(); ctx.fill(); ctx.fillStyle='rgba(255,236,180,.65)'; ctx.beginPath();ctx.arc(-r*.22,-r*.22,Math.max(1.5,r*.2),0,Math.PI*2);ctx.fill();ctx.restore(); });
+        label('餅乾屑',0,42,12,'#9b6934');
       } else if (prop.type === 'fork') {
         ctx.strokeStyle='#b5bec0'; ctx.lineWidth=8; ctx.lineCap='round'; ctx.beginPath();ctx.moveTo(-42,26);ctx.lineTo(27,-19);ctx.stroke(); ctx.lineWidth=4; for(let i=-9;i<=9;i+=6){ctx.beginPath();ctx.moveTo(25+i,-22-i*.12);ctx.lineTo(38+i,-31-i*.12);ctx.stroke();}
       } else if (prop.type === 'cap') {
@@ -589,15 +593,20 @@
     bridgeLeaves.forEach(leaf => {
       if (leaf.collected) return;
       ctx.save(); ctx.translate(leaf.x, leaf.y); ctx.rotate(leaf.a || -.4);
-      ctx.fillStyle = '#7a9e62'; ctx.beginPath(); ctx.ellipse(0,0,18,8,0,0,Math.PI*2); ctx.fill();
-      ctx.strokeStyle = '#dbe9bf'; ctx.lineWidth = 2; ctx.beginPath(); ctx.moveTo(-13,0); ctx.lineTo(14,0); ctx.stroke(); ctx.restore();
-      label('葉', leaf.x, leaf.y + 20, 11, '#557042');
+      ctx.fillStyle='rgba(50,73,38,.16)';ctx.beginPath();ctx.ellipse(3,5,24,10,.05,0,Math.PI*2);ctx.fill();
+      ctx.fillStyle = '#739955'; ctx.beginPath(); ctx.moveTo(-24,0); ctx.quadraticCurveTo(-10,-17,8,-15); ctx.quadraticCurveTo(25,-9,29,0); ctx.quadraticCurveTo(12,15,-5,14); ctx.quadraticCurveTo(-18,11,-24,0); ctx.fill();
+      ctx.strokeStyle = '#d6e5af'; ctx.lineWidth = 2; ctx.lineCap='round'; ctx.beginPath(); ctx.moveTo(-26,1); ctx.quadraticCurveTo(0,-1,28,0); ctx.stroke();
+      ctx.lineWidth=1.3; [-12,-3,7,16].forEach(x=>{ctx.beginPath();ctx.moveTo(x,0);ctx.lineTo(x-4,-6);ctx.moveTo(x,0);ctx.lineTo(x-3,6);ctx.stroke();});
+      ctx.strokeStyle='#587b43';ctx.lineWidth=3;ctx.beginPath();ctx.moveTo(-23,1);ctx.lineTo(-33,5);ctx.stroke();ctx.restore();
+      label('可用葉片', leaf.x, leaf.y + 25, 10, '#557042');
     });
   }
   function drawBridge() {
     if (!state.bridgeBuilt) return;
     ctx.save(); ctx.translate(puddle.x, puddle.y); ctx.rotate(-.12);
-    for (let x = -puddle.rx + 12; x < puddle.rx; x += 26) { rr(x,-12,23,24,5,'#87a86d','#5d7b4d'); }
+    for (let x = -puddle.rx + 12; x < puddle.rx; x += 24) {
+      ctx.save();ctx.translate(x,0);ctx.rotate((x/46)%2*.12);ctx.fillStyle='#769c5a';ctx.beginPath();ctx.moveTo(-17,0);ctx.quadraticCurveTo(-5,-12,12,-8);ctx.quadraticCurveTo(19,-2,20,0);ctx.quadraticCurveTo(8,11,-6,9);ctx.quadraticCurveTo(-15,6,-17,0);ctx.fill();ctx.strokeStyle='#d8e7b6';ctx.lineWidth=1.2;ctx.beginPath();ctx.moveTo(-16,0);ctx.lineTo(18,0);ctx.stroke();ctx.restore();
+    }
     ctx.restore();
   }
   function drawFood() {
