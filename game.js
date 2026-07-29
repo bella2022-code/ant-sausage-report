@@ -46,7 +46,7 @@
       recruitKicker:'巢口招募', recruitTitle:'讓同伴聞見消息', recruitCopy:'017 正在用觸角與氣味召集同伴。等一下，蟻群就會沿路出發。', recruitLine:'「跟著我的氣味走！」', recruitLabel:'招募中', recruitHint:'螞蟻正在出巢', recruitStatus:'一、二、三……更多腳步聲！',
       carryKicker:'搬運任務', carryTitle:'一起把它搬回家', carryCopy:'拖曳火腿腸前進。繞開石頭與水窪，讓隊伍把大餐帶回蟻巢。', carryLine:'「左邊兩隻拉，後面一起推！」', carryLabel:'集體搬運', carryHint:'按住火腿腸並拖曳指揮', carryStatus:'避開石頭和水窪。',
       doneKicker:'任務完成', doneTitle:'017 證明了自己', doneCopy:'火腿腸安全入庫。這次所有螞蟻都相信 017 的報告了。', doneLine:'「我就說過吧！」', doneLabel:'火腿腸已入巢', doneHint:'按重新開始再玩一次', doneStatus:'野餐墊失物案：結案。',
-      found:'找到食物！', decoy:'糟糕，這是石頭！真正的食物在別處。', rush:'食物快被搬走了！直接帶隊救援。', recruiting:'017 正在招募同伴', depart:'蟻群跟著氣味線出發！', rock:'石頭太近了！繞過去。', puddle:'水窪會沖散隊伍！', rival:'那是隔壁紅螞蟻的巢穴，不能靠近！', straggler:'等等！有一隻螞蟻掉隊了！', rejoined:'「回來了！」隊伍又整齊了。', delivering:'大家抓緊，一起搬進巢穴！', nest:'蟻巢', stone:'石頭', water:'水窪', rivalNest:'紅螞蟻巢穴', patrol:'巡邏中', foodSausage:'火腿腸', foodCrescent:'彎彎火腿', foodMeatball:'肉丸', foodSquare:'午餐肉', foodBaguette:'麵包棒', foodDonut:'甜甜圈', foodCheese:'起司角', foodHeart:'愛心火腿', success:'食物安全入巢！', successSub:'017 的報告是真的。', ready:'準備出巢。', leaving:'017 出巢了。'
+      found:'找到食物！', decoy:'糟糕，這是石頭！真正的食物在別處。', rush:'食物快被搬走了！直接帶隊救援。', recruiting:'017 正在招募同伴', depart:'蟻群跟著氣味線出發！', rock:'石頭太近了！繞過去。', puddle:'水窪會沖散隊伍！', rival:'那是隔壁紅螞蟻的巢穴，不能靠近！', sceneBlock:'這個東西太重，繞過去！', sticky:'果汁黏住腳了，走慢一點！', straggler:'等等！有一隻螞蟻掉隊了！', rejoined:'「回來了！」隊伍又整齊了。', delivering:'大家抓緊，一起搬進巢穴！', nest:'蟻巢', stone:'石頭', water:'水窪', rivalNest:'紅螞蟻巢穴', patrol:'巡邏中', foodSausage:'火腿腸', foodCrescent:'彎彎火腿', foodMeatball:'肉丸', foodSquare:'午餐肉', foodBaguette:'麵包棒', foodDonut:'甜甜圈', foodCheese:'起司角', foodHeart:'愛心火腿', success:'食物安全入巢！', successSub:'017 的報告是真的。', ready:'準備出巢。', leaving:'017 出巢了。'
     },
     en: {
       brandTitle:'Sausage Report', chapter:'Chapter 01 · Picnic Blanket Case', restart:'Restart', back:'← Previous', levelMenu:'Level select', levelMenuEyebrow:'MISSION DIRECTORY', levelMenuTitle:'Choose a scouting level',
@@ -58,7 +58,7 @@
       recruitKicker:'NEST RECRUITMENT', recruitTitle:'Let the colony smell the news', recruitCopy:'017 is calling with antennae and scent. The colony will follow the trail soon.', recruitLine:'“Follow my trail!”', recruitLabel:'RECRUITING', recruitHint:'The colony is leaving the nest', recruitStatus:'One, two, three… more footsteps!',
       carryKicker:'CARRY MISSION', carryTitle:'Bring it home together', carryCopy:'Drag the sausage. Avoid the stone and puddle, and bring the feast into the nest.', carryLine:'“Two pull left, everyone else push!”', carryLabel:'TEAM CARRY', carryHint:'Hold the sausage and drag to guide', carryStatus:'Avoid the stone and puddle.',
       doneKicker:'MISSION COMPLETE', doneTitle:'017 proved it', doneCopy:'The sausage is safe in storage. Everyone believes 017 now.', doneLine:'“Told you so!”', doneLabel:'SAUSAGE STORED', doneHint:'Press Restart to play again', doneStatus:'Picnic Blanket Case: closed.',
-      found:'Food found!', decoy:'Oh no, it is a stone! The real food is elsewhere.', rush:'The food is about to disappear! Lead a rescue team now.', recruiting:'017 is recruiting the colony', depart:'The ants follow the scent trail!', rock:'The stone is too close. Go around!', puddle:'The puddle will scatter the team!', rival:'That is the red ants’ nest. Keep away!', straggler:'Wait! One ant fell behind!', rejoined:'“I’m back!” The line is whole again.', delivering:'Hold tight — carry it into the nest!', nest:'NEST', stone:'STONE', water:'PUDDLE', rivalNest:'RED ANT NEST', patrol:'PATROLLING', foodSausage:'SAUSAGE', foodCrescent:'CURLY HAM', foodMeatball:'MEATBALL', foodSquare:'LUNCHEON MEAT', foodDonut:'DONUT', foodCheese:'CHEESE WEDGE', foodHeart:'HEART HAM', success:'Food safely stored!', successSub:'017’s report was true.', ready:'Ready to leave the nest.', leaving:'017 leaves the nest.'
+      found:'Food found!', decoy:'Oh no, it is a stone! The real food is elsewhere.', rush:'The food is about to disappear! Lead a rescue team now.', recruiting:'017 is recruiting the colony', depart:'The ants follow the scent trail!', rock:'The stone is too close. Go around!', puddle:'The puddle will scatter the team!', rival:'That is the red ants’ nest. Keep away!', sceneBlock:'Too heavy to move. Go around!', sticky:'Juice is sticking to your feet — slow down!', straggler:'Wait! One ant fell behind!', rejoined:'“I’m back!” The line is whole again.', delivering:'Hold tight — carry it into the nest!', nest:'NEST', stone:'STONE', water:'PUDDLE', rivalNest:'RED ANT NEST', patrol:'PATROLLING', foodSausage:'SAUSAGE', foodCrescent:'CURLY HAM', foodMeatball:'MEATBALL', foodSquare:'LUNCHEON MEAT', foodDonut:'DONUT', foodCheese:'CHEESE WEDGE', foodHeart:'HEART HAM', success:'Food safely stored!', successSub:'017’s report was true.', ready:'Ready to leave the nest.', leaving:'017 leaves the nest.'
     },
     ja: {
       brandTitle:'ソーセージ報告', chapter:'Chapter 01 · ピクニックシート事件', restart:'最初から', back:'← 前のステージ', levelMenu:'ステージ選択', levelMenuEyebrow:'任務一覧', levelMenuTitle:'偵察ステージを選ぶ',
@@ -70,7 +70,7 @@
       recruitKicker:'仲間を集める', recruitTitle:'仲間に知らせよう', recruitCopy:'017 は触角とにおいで仲間を呼んでいる。すぐにアリたちが道をたどる。', recruitLine:'「このにおいについてきて！」', recruitLabel:'集合中', recruitHint:'アリたちが巣から出発中', recruitStatus:'一匹、二匹、三匹……足音が増える！',
       carryKicker:'運搬任務', carryTitle:'みんなで巣へ運ぼう', carryCopy:'ソーセージをドラッグしよう。石と水たまりを避け、巣まで運ぼう。', carryLine:'「左の二匹は引いて、後ろは押して！」', carryLabel:'協力運搬', carryHint:'ソーセージを押してドラッグ', carryStatus:'石と水たまりに注意。',
       doneKicker:'任務完了', doneTitle:'017 が証明した', doneCopy:'ソーセージは無事に保管された。みんなが017を信じてくれた。', doneLine:'「だから言ったでしょ！」', doneLabel:'ソーセージを保管', doneHint:'最初から を押してもう一度', doneStatus:'ピクニックシート事件：解決。',
-      found:'食べ物を発見！', decoy:'しまった、石だった！本物の食べ物は別の場所にある。', rush:'食べ物がなくなる！すぐに救援隊を動かそう。', recruiting:'017 が仲間を集めている', depart:'アリたちがにおいの道をたどる！', rock:'石が近すぎる。回り込もう！', puddle:'水たまりで隊列がばらばらに！', rival:'ここは赤アリの巣。近づかないで！', straggler:'待って！一匹が遅れている！', rejoined:'「戻ったよ！」列がそろった。', delivering:'みんな、つかまって！巣へ運ぼう！', nest:'アリの巣', stone:'石', water:'水たまり', rivalNest:'赤アリの巣', patrol:'巡回中', foodSausage:'ソーセージ', foodCrescent:'曲がったハム', foodMeatball:'ミートボール', foodSquare:'ランチョンミート', foodBaguette:'パン棒', foodDonut:'ドーナツ', foodCheese:'チーズ', foodHeart:'ハートハム', success:'食べ物を無事に保管！', successSub:'017 の報告は本当だった。', ready:'巣を出る準備完了。', leaving:'017 が巣を出た。'
+      found:'食べ物を発見！', decoy:'しまった、石だった！本物の食べ物は別の場所にある。', rush:'食べ物がなくなる！すぐに救援隊を動かそう。', recruiting:'017 が仲間を集めている', depart:'アリたちがにおいの道をたどる！', rock:'石が近すぎる。回り込もう！', puddle:'水たまりで隊列がばらばらに！', rival:'ここは赤アリの巣。近づかないで！', sceneBlock:'重すぎて動かせない。回り込もう！', sticky:'ジュースで足がべたべた。ゆっくり進もう！', straggler:'待って！一匹が遅れている！', rejoined:'「戻ったよ！」列がそろった。', delivering:'みんな、つかまって！巣へ運ぼう！', nest:'アリの巣', stone:'石', water:'水たまり', rivalNest:'赤アリの巣', patrol:'巡回中', foodSausage:'ソーセージ', foodCrescent:'曲がったハム', foodMeatball:'ミートボール', foodSquare:'ランチョンミート', foodBaguette:'パン棒', foodDonut:'ドーナツ', foodCheese:'チーズ', foodHeart:'ハートハム', success:'食べ物を無事に保管！', successSub:'017 の報告は本当だった。', ready:'巣を出る準備完了。', leaving:'017 が巣を出た。'
     }
   };
   let locale = 'zh-Hant';
@@ -217,10 +217,17 @@
     { mode:'night', patrol:true, nest:{ x:486, y:432, r:52 }, food:{ x:480, y:104, shape:'square', key:'foodSquare', radius:46, skewer:true, fragment:true }, rock:{ x:274, y:225, r:68 }, puddle:{ x:690, y:384, rx:174, ry:80, huge:true }, rival:{ x:490, y:278, r:82 } }
   ];
   let levelIndex = 0;
-  let nest, sausageStart, rock, puddle, rivalNest, foodConfig, missionMode, decoyPoint, mapTheme, bridgeLeaves;
+  let nest, sausageStart, rock, puddle, rivalNest, foodConfig, missionMode, decoyPoint, mapTheme, bridgeLeaves, sceneProps;
+  function buildSceneProps(theme, index) {
+    const shift = (index % 3) * 22;
+    if (theme === 'blanket') return [{ type:'jam', x:650-shift, y:390, r:46 }, { type:'cookie', x:202+shift, y:164, r:30 }, { type:'fork', x:752, y:106, r:0 }];
+    if (theme === 'tile') return [{ type:'cap', x:270+shift, y:378, r:34 }, { type:'spoon', x:726, y:132, r:0 }, { type:'splash', x:536, y:454, r:28 }];
+    if (theme === 'garden') return [{ type:'twig', x:700-shift, y:380, r:42 }, { type:'aphids', x:224, y:164, r:0 }, { type:'leaf', x:838, y:268, r:0 }];
+    return [{ type:'pencil', x:286+shift, y:174, r:42 }, { type:'eraser', x:706, y:388, r:34 }, { type:'clip', x:150, y:340, r:0 }];
+  }
   function loadLevel(index) {
     const level = levels[index];
-    nest = { ...level.nest }; sausageStart = { x:level.food.x, y:level.food.y }; foodConfig = { ...level.food }; rock = { ...level.rock }; puddle = { ...level.puddle }; rivalNest = level.rival ? { ...level.rival, patrol:!!level.patrol, homeX:level.rival.x, homeY:level.rival.y } : null; missionMode = level.mode || 'standard'; decoyPoint = level.decoy ? { ...level.decoy } : null; bridgeLeaves = (level.bridgeLeaves || []).map(leaf => ({ ...leaf, collected:false })); mapTheme = ['blanket','tile','garden','desk'][index % 4];
+    nest = { ...level.nest }; sausageStart = { x:level.food.x, y:level.food.y }; foodConfig = { ...level.food }; rock = { ...level.rock }; puddle = { ...level.puddle }; rivalNest = level.rival ? { ...level.rival, patrol:!!level.patrol, homeX:level.rival.x, homeY:level.rival.y } : null; missionMode = level.mode || 'standard'; decoyPoint = level.decoy ? { ...level.decoy } : null; bridgeLeaves = (level.bridgeLeaves || []).map(leaf => ({ ...leaf, collected:false })); mapTheme = ['blanket','tile','garden','desk'][index % 4]; sceneProps = buildSceneProps(mapTheme, index);
   }
   function currentFoodRadius() { return state?.fragmented ? foodConfig.radius * .62 : foodConfig.radius; }
   const ui = { ink: '#342b25', paper: '#fffaf2', coral: '#d97872', coralDark: '#b95251', moss: '#7e936c', gold: '#d8a34e', blue: '#9cc9d2', muted: '#7c6b61' };
@@ -354,6 +361,8 @@
     const step = Math.min(d, speed * dt / 1000);
     o.x += dx / d * step; o.y += dy / d * step; o.a = Math.atan2(dy, dx);
   }
+  function sceneBlocked(point, padding = 0) { return sceneProps.some(prop => ['cap','twig','pencil','eraser'].includes(prop.type) && distance(point, prop) < prop.r + padding); }
+  function inSticky(point) { const jam = sceneProps.find(prop => prop.type === 'jam'); return !!jam && distance(point, jam) < jam.r; }
 
   function update(dt, now) {
     if (!started || state.paused) return;
@@ -383,11 +392,15 @@
     const scoutTarget = pointer || (hasKeys ? { x: state.scout.x + keyboardDirection.x * 160, y: state.scout.y + keyboardDirection.y * 160 } : null);
     if (state.phase === 'scout' && scoutTarget) {
       const previousScout = { x: state.scout.x, y: state.scout.y };
-      moveToward(state.scout, scoutTarget, 210, dt);
+      moveToward(state.scout, scoutTarget, inSticky(state.scout) ? 112 : 210, dt);
       if (rivalNest && distance(state.scout, rivalNest) < rivalNest.r + 24) {
         state.scout.x = previousScout.x; state.scout.y = previousScout.y;
         state.notice = { text: t('rival'), until: now + 900 };
       }
+      if (sceneBlocked(state.scout, 18)) {
+        state.scout.x = previousScout.x; state.scout.y = previousScout.y;
+        state.notice = { text: t('sceneBlock'), until: now + 900 };
+      } else if (inSticky(state.scout)) state.notice = { text: t('sticky'), until: now + 700 };
       if (state.scout.found) {
         state.trail.push({ x: state.scout.x, y: state.scout.y });
         if (state.trail.length > 520) state.trail.shift();
@@ -447,13 +460,14 @@
       const s = state.sausage;
       const dx = carryTarget.x - s.x, dy = carryTarget.y - s.y, d = Math.hypot(dx, dy);
       if (d > 9) {
-        const step = Math.min(d, 120 * dt / 1000);
+        const step = Math.min(d, (inSticky(s) ? 58 : 120) * dt / 1000);
         const next = { x: s.x + dx / d * step, y: s.y + dy / d * step };
         const rivalTooNear = rivalNest && distance(next, rivalNest) < rivalNest.r + currentFoodRadius();
-        if (distance(next, rock) > rock.r + currentFoodRadius() && (!ellipseContains(next.x, next.y) || state.bridgeBuilt) && !rivalTooNear) {
+        const propTooNear = sceneBlocked(next, currentFoodRadius());
+        if (distance(next, rock) > rock.r + currentFoodRadius() && (!ellipseContains(next.x, next.y) || state.bridgeBuilt) && !rivalTooNear && !propTooNear) {
           s.x = next.x; s.y = next.y; s.a = Math.atan2(dy, dx);
         } else if (!state.notice || now > state.notice.until - 500) {
-          state.notice = { text: distance(next, rock) <= rock.r + currentFoodRadius() ? t('rock') : rivalTooNear ? t('rival') : puddle.bridge ? t('bridgeNear') : t('puddle'), until: now + 1050 };
+          state.notice = { text: distance(next, rock) <= rock.r + currentFoodRadius() ? t('rock') : rivalTooNear ? t('rival') : propTooNear ? t('sceneBlock') : puddle.bridge ? t('bridgeNear') : t('puddle'), until: now + 1050 };
         }
       }
       if (distance(s, nest) < nest.r - 2) {
@@ -511,6 +525,39 @@
     const clusters = [[38,45],[916,61],[42,492],[913,486],[178,40],[830,498]];
     ctx.strokeStyle = '#73905f'; ctx.lineCap = 'round'; ctx.lineWidth = 4;
     clusters.forEach(([x,y]) => { for (let i = -3; i <= 3; i++) { ctx.beginPath(); ctx.moveTo(x + i * 9, y + 16); ctx.quadraticCurveTo(x + i * 7, y - 2, x + i * 14, y - 10); ctx.stroke(); } });
+  }
+  function drawSceneProps() {
+    sceneProps.forEach(prop => {
+      ctx.save(); ctx.translate(prop.x, prop.y);
+      if (prop.type === 'jam') {
+        ctx.fillStyle='rgba(205,96,75,.58)'; ctx.beginPath(); ctx.ellipse(0,0,prop.r,prop.r*.56,-.18,0,Math.PI*2); ctx.fill();
+        ctx.strokeStyle='rgba(255,230,207,.82)'; ctx.lineWidth=3; ctx.beginPath(); ctx.ellipse(-7,-4,prop.r*.47,prop.r*.21,-.2,.15,2.8); ctx.stroke();
+        label('果汁',0,prop.r*.78,11,'#a45148');
+      } else if (prop.type === 'cookie') {
+        ctx.fillStyle='#d79a4c'; ctx.beginPath(); ctx.arc(0,0,prop.r,0,Math.PI*2); ctx.fill(); ctx.fillStyle='#8a542b'; [[-9,-7],[8,-5],[-4,10],[13,9]].forEach(([x,y])=>{ctx.beginPath();ctx.arc(x,y,3,0,Math.PI*2);ctx.fill();});
+      } else if (prop.type === 'fork') {
+        ctx.strokeStyle='#b5bec0'; ctx.lineWidth=8; ctx.lineCap='round'; ctx.beginPath();ctx.moveTo(-42,26);ctx.lineTo(27,-19);ctx.stroke(); ctx.lineWidth=4; for(let i=-9;i<=9;i+=6){ctx.beginPath();ctx.moveTo(25+i,-22-i*.12);ctx.lineTo(38+i,-31-i*.12);ctx.stroke();}
+      } else if (prop.type === 'cap') {
+        ctx.fillStyle='#77a8bd';ctx.beginPath();ctx.arc(0,0,prop.r,0,Math.PI*2);ctx.fill();ctx.strokeStyle='#d7edf0';ctx.lineWidth=3;ctx.beginPath();ctx.arc(0,0,prop.r*.66,0,Math.PI*2);ctx.stroke(); for(let a=0;a<Math.PI*2;a+=Math.PI/6){ctx.beginPath();ctx.moveTo(Math.cos(a)*25,Math.sin(a)*25);ctx.lineTo(Math.cos(a)*33,Math.sin(a)*33);ctx.stroke();}
+      } else if (prop.type === 'spoon') {
+        ctx.rotate(-.42);ctx.fillStyle='#b9c5c7';ctx.beginPath();ctx.ellipse(-20,-13,17,25,-.15,0,Math.PI*2);ctx.fill();ctx.fillRect(-5,-18,76,12);ctx.fillStyle='rgba(255,255,255,.55)';ctx.beginPath();ctx.ellipse(-24,-20,7,12,-.15,0,Math.PI*2);ctx.fill();
+      } else if (prop.type === 'splash') {
+        ctx.fillStyle='rgba(133,194,210,.48)';ctx.beginPath();ctx.ellipse(0,0,36,18,.15,0,Math.PI*2);ctx.fill();ctx.fillStyle='rgba(255,255,255,.7)';ctx.beginPath();ctx.ellipse(-8,-4,16,5,.15,0,Math.PI*2);ctx.fill();
+      } else if (prop.type === 'twig') {
+        ctx.rotate(-.38);ctx.strokeStyle='#69483a';ctx.lineWidth=13;ctx.lineCap='round';ctx.beginPath();ctx.moveTo(-47,0);ctx.lineTo(47,0);ctx.stroke();ctx.lineWidth=7;ctx.beginPath();ctx.moveTo(8,0);ctx.lineTo(27,-25);ctx.stroke();ctx.beginPath();ctx.moveTo(-18,0);ctx.lineTo(-31,19);ctx.stroke();
+      } else if (prop.type === 'aphids') {
+        ctx.strokeStyle='#5d7c4c';ctx.lineWidth=4;ctx.beginPath();ctx.moveTo(-28,19);ctx.quadraticCurveTo(0,-20,28,19);ctx.stroke();ctx.fillStyle='#91ad68';[[-15,5],[0,-4],[15,5]].forEach(([x,y])=>{ctx.beginPath();ctx.ellipse(x,y,8,5,.3,0,Math.PI*2);ctx.fill();});
+      } else if (prop.type === 'leaf') {
+        ctx.rotate(-.55);ctx.fillStyle='#718e58';ctx.beginPath();ctx.ellipse(0,0,30,14,0,0,Math.PI*2);ctx.fill();ctx.strokeStyle='#d5e2b9';ctx.lineWidth=2;ctx.beginPath();ctx.moveTo(-25,0);ctx.lineTo(27,0);ctx.stroke();
+      } else if (prop.type === 'pencil') {
+        ctx.rotate(-.52);rr(-58,-8,103,16,4,'#e3b84d','#805c38');ctx.fillStyle='#f3dfb3';ctx.beginPath();ctx.moveTo(45,-8);ctx.lineTo(64,0);ctx.lineTo(45,8);ctx.fill();ctx.fillStyle='#3f342d';ctx.beginPath();ctx.moveTo(59,-3);ctx.lineTo(67,0);ctx.lineTo(59,3);ctx.fill();
+      } else if (prop.type === 'eraser') {
+        ctx.rotate(-.16);rr(-34,-19,68,38,8,'#e98f9c','#ae5e6b');ctx.fillStyle='rgba(255,255,255,.34)';ctx.fillRect(-24,-11,42,6);
+      } else if (prop.type === 'clip') {
+        ctx.strokeStyle='#9ba7ab';ctx.lineWidth=6;ctx.beginPath();ctx.ellipse(0,0,15,28,.55,0,Math.PI*2);ctx.stroke();ctx.beginPath();ctx.ellipse(0,0,8,20,.55,0,Math.PI*2);ctx.stroke();
+      }
+      ctx.restore();
+    });
   }
   function drawNest() {
     ctx.save(); ctx.translate(nest.x, nest.y);
@@ -718,7 +765,7 @@
     nightCtx.globalCompositeOperation = 'source-over';
     ctx.drawImage(nightLayer,0,0);
   }
-  function draw(now) { drawMap(); if(mapTheme === 'garden') drawGrass(); drawPuddle(); drawBridge(); drawBridgeLeaves(); drawRock(); drawRivalNest(now); drawNest(); if(state.trail.length>1) path(state.trail,ui.gold,6,.65); drawFood(); if(['cut','split','carry','delivery'].includes(state.phase)) drawTeam(now); else if(state.phase === 'follow') drawFollowTrail(now); else drawScout(); drawRecruit(now); drawNight(); drawOverlay(now); }
+  function draw(now) { drawMap(); if(mapTheme === 'garden') drawGrass(); drawSceneProps(); drawPuddle(); drawBridge(); drawBridgeLeaves(); drawRock(); drawRivalNest(now); drawNest(); if(state.trail.length>1) path(state.trail,ui.gold,6,.65); drawFood(); if(['cut','split','carry','delivery'].includes(state.phase)) drawTeam(now); else if(state.phase === 'follow') drawFollowTrail(now); else drawScout(); drawRecruit(now); drawNight(); drawOverlay(now); }
   function frame(now){const dt=Math.min(32,now-last);last=now;update(dt,now);draw(now);requestAnimationFrame(frame);}
   function tryJump() {
     if (!started || state.phase !== 'carry' || !puddle.huge || state.jumpUsed) return;
