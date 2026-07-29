@@ -280,7 +280,7 @@
     state = {
       phase: rush ? 'carry' : 'scout', scout: { x: nest.x + 8, y: nest.y + 2, a: -0.6, found: false },
       sausage: { x: decoyPoint?.x ?? sausageStart.x, y: decoyPoint?.y ?? sausageStart.y, a: -0.12, scale: 1 },
-      trail: [], team: [], recruitAt: 0, followStart: 0, complete: false, burst: [], notice: null, jump: null, jumpUsed: false, bridgeBuilt:false, bites: 0, skewerRemoved: !foodConfig.skewer, fragmented: false, patrolStart: performance.now(), straggler:null, stragglerSeen:false, stragglerAt:performance.now() + 4400, stragglerEligible:levelIndex % 4 === 2
+      trail: [], team: [], recruitAt: 0, followStart: 0, complete: false, nextAt:0, burst: [], notice: null, jump: null, jumpUsed: false, bridgeBuilt:false, bites: 0, skewerRemoved: !foodConfig.skewer, fragmented: false, patrolStart: performance.now(), straggler:null, stragglerSeen:false, stragglerAt:performance.now() + 4400, stragglerEligible:levelIndex % 4 === 2
     };
     if (rush) { state.team = Array.from({ length: 16 }, (_, i) => ({ offset: i * Math.PI * 2 / 16, bob: Math.random() * Math.PI * 2 })); state.notice = { text:t('rush'), until:performance.now() + 1600 }; }
     pointer = null; held = false; last = performance.now();
@@ -356,7 +356,11 @@
   }
 
   function update(dt, now) {
-    if (!started || state.complete || state.paused) return;
+    if (!started || state.paused) return;
+    if (state.complete) {
+      if (state.nextAt && now >= state.nextAt && levelIndex < levels.length - 1) chooseLevel(levelIndex + 1);
+      return;
+    }
     if (rivalNest?.patrol) {
       const orbit = (now - state.patrolStart) / 1300;
       rivalNest.x = rivalNest.homeX + Math.cos(orbit) * 48;
@@ -430,6 +434,7 @@
       state.sausage.scale = 1 - eased * .82;
       if (elapsed >= 1) {
         state.complete = true;
+        state.nextAt = levelIndex < levels.length - 1 ? now + 2300 : 0;
         if (!profile.completed.includes(levelIndex)) { profile.completed.push(levelIndex); saveProfile(); }
         if (!wardrobeTestMode) { profile.crumbs += 12; saveProfile(); updateCrumbBank(); state.notice = { text: wc().reward, until: now + 2600 }; }
         for (let i = 0; i < 34; i++) state.burst.push({ a: Math.random() * Math.PI * 2, r: 0, v: 45 + Math.random() * 80, hue: i % 2 ? ui.gold : ui.coral });
