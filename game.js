@@ -25,6 +25,7 @@
   const jumpButton = document.getElementById('jumpButton');
   const bridgeButton = document.getElementById('bridgeButton');
   const biteButton = document.getElementById('biteButton');
+  const demoButton = document.getElementById('demoButton');
   const backToMenuButton = document.getElementById('backToMenuButton');
   const crumbBank = document.getElementById('crumbBank');
   const wardrobeButton = document.getElementById('wardrobeButton');
@@ -89,6 +90,7 @@
     backToMenuButton.textContent = t('back');
     jumpButton.textContent = t('jump');
     biteButton.textContent = state?.phase === 'split' ? t('split') : t('bite');
+    demoButton.textContent = locale === 'en' ? '💡 DEMO' : locale === 'ja' ? '💡 お手本' : '💡 示範';
     wardrobeButton.textContent = wc().button;
     closeLevelMenu.setAttribute('aria-label', locale === 'en' ? 'Close' : locale === 'ja' ? '閉じる' : '關閉');
     closeWardrobe.setAttribute('aria-label', locale === 'en' ? 'Close' : locale === 'ja' ? '閉じる' : '關閉');
@@ -105,9 +107,9 @@
       ['小巢的肉丸','肉丸 · 小入口'], ['對角線午餐','午餐肉 · 逆向搬運'],
       ['大巢的大餐','麵包棒 · 大入口'], ['甜甜圈繞路','甜甜圈 · 紅螞蟻領域'],
       ['起司角任務','起司角 · 雙重障礙'], ['最後的愛心火腿','愛心火腿 · 全部挑戰'],
-      ['中場肉丸','肉丸 · 超大水窪跳躍'], ['麵包棒橫越','麵包棒 · 側邊巢穴'],
+      ['中場肉丸','肉丸 · 繞開水窪'], ['麵包棒橫越','麵包棒 · 側邊巢穴'],
       ['小巢午餐肉','午餐肉 · 窄入口'], ['彎彎火腿快跑','彎彎火腿 · 中央領域'],
-      ['甜甜圈遠征','甜甜圈 · 超大水窪跳躍'], ['起司角夾縫','起司角 · 小巢與領域'],
+      ['甜甜圈遠征','甜甜圈 · 活體橋水道'], ['起司角夾縫','起司角 · 小巢與領域'],
       ['直線火腿腸','火腿腸 · 中央封鎖'], ['愛心火腿最終線','愛心火腿 · 大水窪與最難領域'],
       ['草地肉丸','肉丸 · 三面阻擋'], ['串燒救援','火腿腸 · 竹籤與小巢'],
       ['彎月繞道','彎彎火腿 · 大水窪'], ['午餐肉分隊','午餐肉 · 分碎後進巢'],
@@ -125,9 +127,9 @@
       ['Meatball, Small Nest','Meatball · small entrance'], ['Diagonal Lunch','Luncheon meat · reverse route'],
       ['Big Feast, Big Nest','Breadstick · wide entrance'], ['Donut Detour','Donut · red ant territory'],
       ['Cheese Wedge Run','Cheese · double obstacle'], ['Final Heart Ham','Heart ham · every challenge'],
-      ['Midfield Meatball','Meatball · giant puddle jump'], ['Breadstick Crossing','Breadstick · side nest'],
+      ['Midfield Meatball','Meatball · puddle detour'], ['Breadstick Crossing','Breadstick · side nest'],
       ['Small Nest Lunch','Luncheon meat · narrow entrance'], ['Curly Ham Dash','Curly ham · central territory'],
-      ['Donut Expedition','Donut · giant puddle jump'], ['Cheese Wedge Gap','Cheese · small nest & territory'],
+      ['Donut Expedition','Donut · living bridge waterway'], ['Cheese Wedge Gap','Cheese · small nest & territory'],
       ['Straight Sausage','Sausage · central blockade'], ['Final Heart Line','Heart ham · giant puddle & hardest territory'],
       ['Garden Meatball','Meatball · blocked on three sides'], ['Skewer Rescue','Sausage · skewer & small nest'],
       ['Crescent Detour','Curly ham · giant puddle'], ['Lunch Meat Squad','Luncheon meat · split before entry'],
@@ -144,9 +146,9 @@
       ['ピクニック入門','ソーセージ · 石と水たまり'], ['赤アリのとなり','曲がったハム · 立入禁止'],
       ['小さな巣と肉だんご','肉だんご · 小さい入口'], ['対角線ランチ','ランチョンミート · 逆ルート'], ['大きな巣、大きなごちそう','パン棒 · 大きい入口'], ['ドーナツの回り道','ドーナツ · 赤アリ領域'],
       ['チーズの任務','チーズ · 二つの障害'], ['最後のハートハム','ハートハム · 全チャレンジ'],
-      ['中盤の肉だんご','肉だんご · 大きな水たまりジャンプ'], ['パン棒横断','パン棒 · 横の巣'],
+      ['中盤の肉だんご','肉だんご · 水たまりを回り道'], ['パン棒横断','パン棒 · 横の巣'],
       ['小さな巣のランチ','ランチョンミート · 狭い入口'], ['曲がったハムの疾走','曲がったハム · 中央領域'],
-      ['ドーナツ遠征','ドーナツ · 大きな水たまりジャンプ'], ['チーズのすき間','チーズ · 小さい巣と領域'],
+      ['ドーナツ遠征','ドーナツ · 生きた橋の水路'], ['チーズのすき間','チーズ · 小さい巣と領域'],
       ['まっすぐソーセージ','ソーセージ · 中央封鎖'], ['最後のハートライン','ハートハム · 大きな水たまりと最難関領域'],
       ['庭の肉だんご','肉だんご · 三方向の障害'], ['串刺し救出','ソーセージ · 竹串と小さな巣'],
       ['三日月の回り道','曲がったハム · 大きな水たまり'], ['ランチ肉分隊','ランチョンミート · 分けてから巣へ'],
@@ -287,7 +289,7 @@
     state = {
       phase: rush ? 'carry' : 'scout', scout: { x: nest.x + 8, y: nest.y + 2, a: -0.6, found: false },
       sausage: { x: decoyPoint?.x ?? sausageStart.x, y: decoyPoint?.y ?? sausageStart.y, a: -0.12, scale: 1 },
-      trail: [], team: [], recruitAt: 0, followStart: 0, complete: false, nextAt:0, burst: [], notice: null, jump: null, jumpUsed: false, bridgeBuilt:false, bites: 0, skewerRemoved: !foodConfig.skewer, fragmented: false, patrolStart: performance.now(), straggler:null, stragglerSeen:false, stragglerAt:performance.now() + 4400, stragglerEligible:levelIndex % 4 === 2
+      trail: [], team: [], recruitAt: 0, followStart: 0, complete: false, nextAt:0, burst: [], notice: null, demo:null, jump: null, jumpUsed: false, bridgeBuilt:false, bites: 0, skewerRemoved: !foodConfig.skewer, fragmented: false, patrolStart: performance.now(), straggler:null, stragglerSeen:false, stragglerAt:performance.now() + 4400, stragglerEligible:levelIndex % 4 === 2
     };
     if (rush) { state.team = Array.from({ length: 16 }, (_, i) => ({ offset: i * Math.PI * 2 / 16, bob: Math.random() * Math.PI * 2 })); state.notice = { text:t('rush'), until:performance.now() + 1600 }; }
     pointer = null; held = false; last = performance.now();
@@ -361,6 +363,30 @@
     if (d < .5) return;
     const step = Math.min(d, speed * dt / 1000);
     o.x += dx / d * step; o.y += dy / d * step; o.a = Math.atan2(dy, dx);
+  }
+  function demoCopy() {
+    if (state.phase === 'cut') return locale === 'en' ? 'Press BITE three times to free the food.' : locale === 'ja' ? '「かみ切る」を3回押して、竹串を外そう。' : '「咬斷」按三次，先把竹籤咬開。';
+    if (state.phase === 'split') return locale === 'en' ? 'Press SPLIT twice — small pieces fit into the nest.' : locale === 'ja' ? '「分ける」を2回。小さくすると巣に入る。' : '「分碎」按兩次；變小才塞得進巢。';
+    if (state.phase === 'carry' && puddle.livingBridge && !state.bridgeBuilt) return locale === 'en' ? 'Bring the food to the waterway, then press LIVING BRIDGE.' : locale === 'ja' ? '食べ物を水路まで運び、「生きた橋」を押そう。' : '先把食物帶到水道邊，再按「活體橋」。';
+    if (state.phase === 'carry' && puddle.huge && !puddle.bridge && !state.jumpUsed) return locale === 'en' ? 'At the giant puddle, press JUMP or Space.' : locale === 'ja' ? '大きな水たまりの近くで、ジャンプかSpaceを押そう。' : '到超大水窪邊，按「跳！」或空白鍵。';
+    if (state.phase === 'scout' && !state.scout.found) return locale === 'en' ? 'Guide 017 to the food first.' : locale === 'ja' ? 'まず017を食べ物まで案内しよう。' : '先帶 017 靠近食物。';
+    if (state.phase === 'scout') return locale === 'en' ? 'Return to the nest to leave a pheromone trail.' : locale === 'ja' ? '巣へ戻って、においの道を残そう。' : '回到蟻巢，留下費洛蒙路徑。';
+    if (state.phase === 'carry') return locale === 'en' ? 'Carry toward the nest; detour around heavy objects and water.' : locale === 'ja' ? '巣へ運ぼう。重い物と水たまりは回り込む。' : '往蟻巢搬；石頭、水窪和重物都要繞開。';
+    return locale === 'en' ? 'Follow the highlighted next step.' : locale === 'ja' ? '光っている次の行動を見よう。' : '看亮起來的下一步。';
+  }
+  function demoPoints() {
+    if (state.phase === 'scout') return [state.scout, state.scout.found ? nest : state.sausage];
+    const s = state.sausage;
+    if (state.phase === 'carry' && puddle.livingBridge && !state.bridgeBuilt) {
+      const fromRight = s.x > puddle.x;
+      return [s, {x:puddle.x + (fromRight ? puddle.rx + 24 : -puddle.rx - 24), y:puddle.y}, {x:puddle.x - (fromRight ? puddle.rx + 24 : -puddle.rx - 24), y:puddle.y}, nest];
+    }
+    return [s, nest];
+  }
+  function showDemo() {
+    if (!started || state.complete) return;
+    state.demo = { points:demoPoints().map(point => ({x:point.x,y:point.y})), until:performance.now() + 4300, text:demoCopy() };
+    state.notice = { text:state.demo.text, until:performance.now() + 2500 };
   }
   function sceneBlocked(point, padding = 0) { return sceneProps.some(prop => ['cap','twig','pencil','eraser'].includes(prop.type) && distance(point, prop) < prop.r + padding); }
   function inSticky(point) { const jam = sceneProps.find(prop => prop.type === 'jam'); return !!jam && distance(point, jam) < jam.r; }
@@ -620,6 +646,13 @@
     }
     ctx.restore();
   }
+  function drawDemo(now) {
+    if (!state.demo || now >= state.demo.until) return;
+    const points = state.demo.points;
+    ctx.save(); ctx.globalAlpha = .84; ctx.setLineDash([10,9]); ctx.lineDashOffset = -(now / 28); ctx.strokeStyle = '#f4c64e'; ctx.lineWidth = 6; ctx.lineCap = 'round'; ctx.lineJoin = 'round'; ctx.beginPath(); ctx.moveTo(points[0].x,points[0].y); points.slice(1).forEach(point=>ctx.lineTo(point.x,point.y)); ctx.stroke(); ctx.setLineDash([]);
+    points.slice(1).forEach((point,index) => { ctx.fillStyle='#fff8cf';ctx.strokeStyle='#b8832e';ctx.lineWidth=2;ctx.beginPath();ctx.arc(point.x,point.y,index === points.length-2 ? 16 : 10,0,Math.PI*2);ctx.fill();ctx.stroke(); });
+    label('💡', points[0].x, points[0].y - 36, 24, '#8c672b'); ctx.restore();
+  }
   function drawFood() {
     const s = state.sausage; const scale = (s.scale || 1) * (state.fragmented ? .62 : 1); const lift = s.lift || 0; ctx.save(); ctx.translate(s.x,s.y-lift); ctx.rotate(s.a); ctx.scale(scale,scale);
     ctx.fillStyle = 'rgba(73,42,36,.12)'; ctx.beginPath(); ctx.ellipse(7,30,foodConfig.radius + 20,18,0,0,Math.PI*2); ctx.fill();
@@ -786,7 +819,7 @@
     nightCtx.globalCompositeOperation = 'source-over';
     ctx.drawImage(nightLayer,0,0);
   }
-  function draw(now) { drawMap(); if(mapTheme === 'garden') drawGrass(); drawSceneProps(); drawPuddle(); drawBridge(); drawBridgeLeaves(); drawRock(); drawRivalNest(now); drawNest(); if(state.trail.length>1) path(state.trail,ui.gold,6,.65); drawFood(); if(['cut','split','carry','delivery'].includes(state.phase)) drawTeam(now); else if(state.phase === 'follow') drawFollowTrail(now); else drawScout(); drawRecruit(now); drawNight(); drawOverlay(now); }
+  function draw(now) { drawMap(); if(mapTheme === 'garden') drawGrass(); drawSceneProps(); drawPuddle(); drawBridge(); drawBridgeLeaves(); drawRock(); drawRivalNest(now); drawNest(); if(state.trail.length>1) path(state.trail,ui.gold,6,.65); drawDemo(now); drawFood(); if(['cut','split','carry','delivery'].includes(state.phase)) drawTeam(now); else if(state.phase === 'follow') drawFollowTrail(now); else drawScout(); drawRecruit(now); drawNight(); drawOverlay(now); }
   function frame(now){const dt=Math.min(32,now-last);last=now;update(dt,now);draw(now);requestAnimationFrame(frame);}
   function tryJump() {
     if (!started || state.phase !== 'carry' || !puddle.huge || state.jumpUsed) return;
@@ -830,6 +863,7 @@
   canvas.addEventListener('keydown',e=>{
     const key=e.code;
     if(key === 'Escape' && started) { e.preventDefault(); openLevelMenu(); return; }
+    if(key === 'KeyH' && started) { e.preventDefault(); showDemo(); return; }
     if(key === 'Space' && started) { e.preventDefault(); tryJump(); return; }
     if(key === 'KeyE' && started) { e.preventDefault(); prepareFood(); return; }
     if(!['KeyW','KeyA','KeyS','KeyD','ArrowUp','ArrowDown','ArrowLeft','ArrowRight'].includes(key)||!started)return;
@@ -868,6 +902,7 @@
   jumpButton.addEventListener('click', tryJump);
   bridgeButton.addEventListener('click', tryBuildBridge);
   biteButton.addEventListener('click', prepareFood);
+  demoButton.addEventListener('click', showDemo);
   try { locale = translations[localStorage.getItem('ant-game-language')] ? localStorage.getItem('ant-game-language') : 'zh-Hant'; } catch (_) {}
   languageSelect.value = locale;
   languageSelect.addEventListener('change', () => setLanguage(languageSelect.value));

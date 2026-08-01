@@ -68,6 +68,8 @@ h1 { margin: 0; max-width: 9ch; font-size: clamp(2rem, 3.4vw, 3.35rem); line-hei
 .canvas-wrap { position: relative; overflow: hidden; }
 #gameCanvas { display: block; width: 100%; height: auto; aspect-ratio: 16 / 9; touch-action: none; outline: none; }
 #gameCanvas:focus-visible { outline: 3px solid var(--gold); outline-offset: -3px; }
+.demo-button { position: absolute; right: 18px; top: 16px; z-index: 3; border: 2px solid var(--paper); border-radius: 99px; padding: 8px 12px; background: #fff1b8; color: #70501b; box-shadow: 0 3px 0 #cba64a; font-weight: 800; font-size: .78rem; }
+.demo-button:active { transform: translateY(3px); box-shadow: none; }
 .jump-button { position: absolute; right: 18px; bottom: 16px; z-index: 3; border: 3px solid var(--paper); border-radius: 50%; width: 66px; height: 66px; background: var(--gold); color: var(--ink); box-shadow: 0 5px 0 #a77532; font-weight: 800; font-size: .9rem; }
 .jump-button:active { transform: translateY(4px); box-shadow: 0 1px 0 #a77532; }
 .bridge-button { position: absolute; right: 18px; bottom: 16px; z-index: 3; border: 3px solid var(--paper); border-radius: 50%; width: 66px; height: 66px; background: var(--moss); color: var(--paper); box-shadow: 0 5px 0 #596d49; font-weight: 800; font-size: .78rem; }
