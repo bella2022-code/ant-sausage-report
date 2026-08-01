@@ -387,6 +387,7 @@
     if (!started || state.complete) return;
     state.demo = { points:demoPoints().map(point => ({x:point.x,y:point.y})), until:performance.now() + 4300, text:demoCopy() };
     state.notice = { text:state.demo.text, until:performance.now() + 2500 };
+    liveStatus.textContent = state.demo.text;
   }
   function sceneBlocked(point, padding = 0) { return sceneProps.some(prop => ['cap','twig','pencil','eraser'].includes(prop.type) && distance(point, prop) < prop.r + padding); }
   function inSticky(point) { const jam = sceneProps.find(prop => prop.type === 'jam'); return !!jam && distance(point, jam) < jam.r; }
