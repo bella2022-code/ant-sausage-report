@@ -120,7 +120,13 @@
       ['起司小徑','起司角 · 假目標'], ['串燒大隊','彎彎火腿 · 咬斷竹籤'],
       ['桌角午餐肉','午餐肉 · 遠處巢穴'], ['水窪邊的麵包','麵包棒 · 跳躍'],
       ['深夜肉丸','肉丸 · 夜間與領域'], ['雙重甜甜圈','甜甜圈 · 分碎食物'],
-      ['小巢愛心','愛心火腿 · 竹籤與分碎'], ['巢穴運動會','午餐肉 · 全面挑戰']
+      ['小巢愛心','愛心火腿 · 竹籤與分碎'], ['巢穴運動會','午餐肉 · 全面挑戰'],
+      ['月光香腸','火腿腸 · 夜巡與竹籤'], ['彎月急轉','彎彎火腿 · 直接救援'],
+      ['肉丸真假','肉丸 · 假目標與分碎'], ['紅螞蟻十字路','愛心火腿 · 中央地盤'],
+      ['葉橋起司','起司角 · 必經葉橋'], ['深夜午餐肉','午餐肉 · 夜巡、咬斷與分碎'],
+      ['心形快報','愛心火腿 · 直接帶隊'], ['甜甜圈誤導','甜甜圈 · 巡邏假目標'],
+      ['麵包棒風暴','麵包棒 · 分碎與跳躍'], ['夜班肉丸','肉丸 · 夜巡竹籤'],
+      ['最後活體橋','愛心火腿 · 全部規則與活體橋']
     ],
     en: [
       ['Picnic Basics','Sausage · stone & puddle'], ['Red Ant Neighbours','Curly ham · forbidden zone'],
@@ -140,7 +146,13 @@
       ['Cheese Footpath','Cheese wedge · decoy'], ['Skewer Squad','Curly ham · bite the skewer'],
       ['Desk-Corner Lunch','Luncheon meat · distant nest'], ['Bread by the Puddle','Breadstick · jump'],
       ['Midnight Meatball','Meatball · night & territory'], ['Double Donut','Donut · split the food'],
-      ['Tiny Nest Heart','Heart ham · skewer & split'], ['Nest Games','Luncheon meat · full challenge']
+      ['Tiny Nest Heart','Heart ham · skewer & split'], ['Nest Games','Luncheon meat · full challenge'],
+      ['Moonlit Sausage','Sausage · night patrol & skewer'], ['Crescent Sprint','Curly ham · direct rescue'],
+      ['Meatball Misdirect','Meatball · decoy & split'], ['Red Ant Crossroads','Heart ham · central territory'],
+      ['Leaf Bridge Cheese','Cheese · required leaf bridge'], ['Midnight Luncheon','Luncheon meat · night, bite & split'],
+      ['Heart Express II','Heart ham · lead the team'], ['Donut Misdirection','Donut · patrol decoy'],
+      ['Breadstick Storm','Breadstick · split & jump'], ['Night-shift Meatball','Meatball · night skewer'],
+      ['Final Living Bridge','Heart ham · every rule & living bridge']
     ],
     ja: [
       ['ピクニック入門','ソーセージ · 石と水たまり'], ['赤アリのとなり','曲がったハム · 立入禁止'],
@@ -159,7 +171,13 @@
       ['チーズの小道','チーズ · おとり'], ['串焼き隊','曲がったハム · 竹串をかみ切る'],
       ['机のすみのランチ','ランチョンミート · 遠い巣'], ['水たまりのパン','パン棒 · ジャンプ'],
       ['真夜中の肉だんご','肉だんご · 夜と縄張り'], ['ダブルドーナツ','ドーナツ · 食べ物を分ける'],
-      ['小さな巣のハート','ハートハム · 竹串と分ける'], ['巣の運動会','ランチョンミート · 全チャレンジ']
+      ['小さな巣のハート','ハートハム · 竹串と分ける'], ['巣の運動会','ランチョンミート · 全チャレンジ'],
+      ['月明かりのソーセージ','ソーセージ · 夜の巡回と竹串'], ['三日月スプリント','曲がったハム · すぐに救援'],
+      ['肉だんごの迷わせ','肉だんご · おとりと分ける'], ['赤アリの交差点','ハートハム · 中央の縄張り'],
+      ['葉っぱ橋のチーズ','チーズ · 必須の葉っぱ橋'], ['真夜中のランチ肉','ランチ肉 · 夜、かみ切る、分ける'],
+      ['ハート急便 II','ハートハム · 仲間を率いる'], ['ドーナツの目くらまし','ドーナツ · 巡回のおとり'],
+      ['パン棒の嵐','パン棒 · 分けるとジャンプ'], ['夜勤の肉だんご','肉だんご · 夜の竹串'],
+      ['最後の生きた橋','ハートハム · 全ルールと生きた橋']
     ]
   };
   function renderLevelMenu() {
@@ -216,7 +234,18 @@
     { mode:'night', patrol:true, nest:{ x:118, y:118, r:54 }, food:{ x:840, y:426, shape:'meatball', key:'foodMeatball', radius:42 }, rock:{ x:505, y:280, r:70 }, puddle:{ x:273, y:366, rx:106, ry:49 }, rival:{ x:676, y:176, r:80 } },
     { nest:{ x:840, y:126, r:49 }, food:{ x:116, y:420, shape:'donut', key:'foodDonut', radius:55, fragment:true }, rock:{ x:375, y:210, r:65 }, puddle:{ x:664, y:334, rx:110, ry:52 }, rival:{ x:525, y:426, r:77 } },
     { nest:{ x:112, y:428, r:40 }, food:{ x:842, y:120, shape:'heart', key:'foodHeart', radius:62, skewer:true, fragment:true }, rock:{ x:506, y:215, r:66 }, puddle:{ x:678, y:394, rx:108, ry:50 }, rival:{ x:325, y:396, r:79 } },
-    { mode:'night', patrol:true, nest:{ x:486, y:432, r:52 }, food:{ x:480, y:104, shape:'square', key:'foodSquare', radius:46, skewer:true, fragment:true }, rock:{ x:274, y:225, r:68 }, puddle:{ x:690, y:384, rx:174, ry:80, huge:true }, rival:{ x:490, y:278, r:82 } }
+    { mode:'night', patrol:true, nest:{ x:486, y:432, r:52 }, food:{ x:480, y:104, shape:'square', key:'foodSquare', radius:46, skewer:true, fragment:true }, rock:{ x:274, y:225, r:68 }, puddle:{ x:690, y:384, rx:174, ry:80, huge:true }, rival:{ x:490, y:278, r:82 } },
+    { mode:'night', patrol:true, nest:{ x:118, y:426, r:54 }, food:{ x:838, y:118, shape:'sausage', key:'foodSausage', radius:52, skewer:true }, rock:{ x:484, y:286, r:71 }, puddle:{ x:292, y:184, rx:114, ry:52 }, rival:{ x:706, y:298, r:80 } },
+    { mode:'rush', nest:{ x:842, y:122, r:60 }, food:{ x:116, y:424, shape:'crescent', key:'foodCrescent', radius:58 }, rock:{ x:478, y:292, r:72 }, puddle:{ x:628, y:386, rx:178, ry:80, huge:true }, rival:{ x:716, y:176, r:78 } },
+    { mode:'decoy', decoy:{x:512,y:112}, nest:{ x:110, y:426, r:48 }, food:{ x:842, y:404, shape:'meatball', key:'foodMeatball', radius:42, fragment:true }, rock:{ x:414, y:372, r:68 }, puddle:{ x:310, y:192, rx:108, ry:50 }, rival:{ x:642, y:246, r:82 } },
+    { nest:{ x:850, y:270, r:68 }, food:{ x:114, y:270, shape:'heart', key:'foodHeart', radius:62 }, rock:{ x:484, y:140, r:70 }, puddle:{ x:480, y:410, rx:134, ry:60 }, rival:{ x:484, y:304, r:78 } },
+    { nest:{ x:112, y:270, r:62 }, food:{ x:846, y:270, shape:'cheese', key:'foodCheese', radius:48 }, rock:{ x:740, y:112, r:52 }, puddle:{ x:480, y:270, rx:160, ry:370, huge:true, bridge:true }, bridgeLeaves:[{x:210,y:126,a:-.5},{x:338,y:416,a:.7},{x:744,y:168,a:.2}], rival:{ x:740, y:432, r:76 } },
+    { mode:'night', patrol:true, nest:{ x:846, y:424, r:45 }, food:{ x:118, y:118, shape:'square', key:'foodSquare', radius:46, skewer:true, fragment:true }, rock:{ x:478, y:264, r:70 }, puddle:{ x:690, y:180, rx:112, ry:50 }, rival:{ x:330, y:392, r:80 } },
+    { mode:'rush', nest:{ x:120, y:118, r:66 }, food:{ x:836, y:422, shape:'heart', key:'foodHeart', radius:62 }, rock:{ x:510, y:300, r:72 }, puddle:{ x:272, y:386, rx:114, ry:52 }, rival:{ x:664, y:158, r:80 } },
+    { mode:'decoy', patrol:true, decoy:{x:180,y:128}, nest:{ x:846, y:420, r:52 }, food:{ x:118, y:408, shape:'donut', key:'foodDonut', radius:55 }, rock:{ x:462, y:414, r:70 }, puddle:{ x:306, y:216, rx:106, ry:48 }, rival:{ x:594, y:250, r:80 } },
+    { nest:{ x:118, y:424, r:70 }, food:{ x:840, y:116, shape:'baguette', key:'foodBaguette', radius:68, fragment:true }, rock:{ x:510, y:258, r:74 }, puddle:{ x:674, y:390, rx:164, ry:74, huge:true }, rival:{ x:290, y:156, r:78 } },
+    { mode:'night', nest:{ x:846, y:118, r:48 }, food:{ x:118, y:424, shape:'meatball', key:'foodMeatball', radius:42, skewer:true }, rock:{ x:486, y:350, r:72 }, puddle:{ x:332, y:152, rx:112, ry:50 }, rival:{ x:694, y:312, r:82 } },
+    { patrol:true, nest:{ x:846, y:270, r:58 }, food:{ x:114, y:270, shape:'heart', key:'foodHeart', radius:62, skewer:true, fragment:true }, rock:{ x:212, y:120, r:54 }, puddle:{ x:480, y:270, rx:164, ry:370, huge:true, bridge:true, livingBridge:true }, rival:{ x:736, y:430, r:84 } }
   ];
   let levelIndex = 0;
   let nest, sausageStart, rock, puddle, rivalNest, foodConfig, missionMode, decoyPoint, mapTheme, bridgeLeaves, sceneProps;
