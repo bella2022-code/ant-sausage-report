@@ -222,7 +222,7 @@
   let nest, sausageStart, rock, puddle, rivalNest, foodConfig, missionMode, decoyPoint, mapTheme, bridgeLeaves, sceneProps;
   function buildSceneProps(theme, index) {
     const shift = (index % 3) * 22;
-    if (theme === 'blanket') return [{ type:'jam', x:650-shift, y:390, r:46 }, { type:'cookie', x:202+shift, y:164, r:36 }, { type:'crumbs', x:338+shift, y:122, r:0 }, { type:'fork', x:752, y:106, r:0 }];
+    if (theme === 'blanket') return [{ type:'jam', x:650-shift, y:390, r:46 }, { type:'cookie', x:202+shift, y:164, r:36 }, { type:'crumbs', x:338+shift, y:122, r:38 }, { type:'fork', x:752, y:106, r:0 }];
     if (theme === 'tile') return [{ type:'cap', x:270+shift, y:378, r:34 }, { type:'spoon', x:726, y:132, r:0 }, { type:'splash', x:536, y:454, r:28 }];
     if (theme === 'garden') return [{ type:'twig', x:700-shift, y:380, r:42 }, { type:'aphids', x:224, y:164, r:0 }, { type:'leaf', x:838, y:268, r:0 }];
     return [{ type:'pencil', x:286+shift, y:174, r:42 }, { type:'eraser', x:706, y:388, r:34 }, { type:'clip', x:150, y:340, r:0 }];
@@ -389,7 +389,7 @@
     state.notice = { text:state.demo.text, until:performance.now() + 2500 };
     liveStatus.textContent = state.demo.text;
   }
-  function sceneBlocked(point, padding = 0) { return sceneProps.some(prop => ['cap','twig','pencil','eraser'].includes(prop.type) && distance(point, prop) < prop.r + padding); }
+  function sceneBlocked(point, padding = 0) { return sceneProps.some(prop => ['cookie','crumbs','cap','twig','pencil','eraser'].includes(prop.type) && distance(point, prop) < prop.r + padding); }
   function inSticky(point) { const jam = sceneProps.find(prop => prop.type === 'jam'); return !!jam && distance(point, jam) < jam.r; }
 
   function update(dt, now) {
